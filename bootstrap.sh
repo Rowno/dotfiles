@@ -7,7 +7,7 @@ function doIt() {
 	rsync --exclude-from "exclude" -av ./public/ ~
 
     for file in $(ls -A ./private/); do
-        cat ./private/$file >> ~/$file
+        [[ file != '.gitignore' ]] && cat ./private/$file >> ~/$file
     done
     unset file
 }
