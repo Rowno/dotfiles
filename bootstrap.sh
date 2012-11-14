@@ -1,9 +1,17 @@
 #!/bin/bash
+#
 cd "$(dirname "$0")"
-git pull
+#git pull
+
 function doIt() {
-	rsync --exclude ".git/" --exclude ".gitattributes" --exclude "bootstrap.sh" --exclude "README.md" --exclude ".DS_Store" -av . ~
+	rsync --exclude-from "exclude" -av ./public/ ~
+
+    for file in $(ls -A ./private/); do
+        cat ./private/$file >> ~/$file
+    done
+    unset file
 }
+
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt
 else
@@ -13,5 +21,6 @@ else
 		doIt
 	fi
 fi
+
 unset doIt
 source ~/.bash_profile
