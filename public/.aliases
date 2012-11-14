@@ -44,7 +44,7 @@ alias update='sudo npm update -g; sudo gem update'
 
 # IP addresses
 alias ip-external="dig +short myip.opendns.com @resolver1.opendns.com"
-function ip-local { ifconfig |grep -B1 "inet addr" |awk '{ if ( $1 == "inet" ) { print $2 } else if ( $2 == "Link" ) { printf "%s:" ,$1 } }' |awk -F: '{ print $1 ": " $3 }'; }
+function ip-local { netstat -n -t | awk '{print $4}' | grep -o '[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*' | grep -v '127.0.0.1' | sort -u; }
 
 # Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
