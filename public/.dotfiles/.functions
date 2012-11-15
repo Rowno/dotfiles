@@ -118,3 +118,12 @@ function extract() {
 		echo "'$1' is not a valid file"
 	fi
 }
+
+# View HTTP traffic
+function sniff {
+	sudo ngrep -d $1 -t '^(GET|POST) ' 'tcp and port 80';
+}
+
+function httpdump {
+	sudo tcpdump -i $1 -n -s 0 -w - | grep -a -o -E "Host\: .*|GET \/.*";
+}
