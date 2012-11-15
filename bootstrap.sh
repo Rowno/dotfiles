@@ -1,13 +1,18 @@
 #!/bin/bash
 #
 cd "$(dirname "$0")"
-#git pull
+
+git pull
+git submodule update --init --recursive --quiet
 
 function doIt() {
 	rsync --exclude-from "exclude" -av ./public/ ~
 
     for file in $(ls -A ./private/); do
-        [[ file != '.gitignore' ]] && cat ./private/$file >> ~/$file
+        if [[ $file != '.gitignore' ]]; then
+            echo "Appending private config to $file"
+            cat ./private/$file >> ~/$file
+        fi
     done
     unset file
 }
