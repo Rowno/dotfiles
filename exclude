@@ -1,9 +1,0 @@
-private/
-public/
-.git/
-.gitattributes
-.gitignore
-exclude
-bootstrap.sh
-README.md
-.DS_Store

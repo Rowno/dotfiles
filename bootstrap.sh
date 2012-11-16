@@ -6,7 +6,7 @@ git pull
 git submodule update --init --recursive --quiet
 
 function doIt() {
-    rsync --exclude-from "exclude" -av ./public/ ~
+    rsync --exclude ".DS_Store" -av ./public/ ~
 
     for file in $(ls -A ./private/); do
         if [[ $file != '.gitignore' ]]; then
