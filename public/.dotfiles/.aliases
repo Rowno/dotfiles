@@ -12,9 +12,9 @@ alias s="subl ."
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
-	colorflag="--color"
+    colorflag="--color"
 else # OS X `ls`
-	colorflag="-G"
+    colorflag="-G"
 fi
 
 # List all files colorized in long format
@@ -54,7 +54,7 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
-	alias "$method"="lwp-request -m '$method'"
+    alias "$method"="lwp-request -m '$method'"
 done
 
 # SSH tunnel
@@ -62,4 +62,10 @@ alias tunnel='sshuttle --daemon --pidfile=/tmp/sshuttle.pid --remote vps --dns 0
 alias tunnelstop='[[ -f /tmp/sshuttle.pid ]] && kill `cat /tmp/sshuttle.pid`'
 
 # git root
-alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
+alias gitr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
+
+# git shortcuts
+alias gits='git status'
+alias gitd='git diff'
+alias gita='git add'
+alias gitl='git log --oneline --decorate'

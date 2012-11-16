@@ -1,10 +1,10 @@
 # Left Wheel Copy
 "xte 'keydown Control_L' 'key C' 'keyup Control_L'"
-   release + b:6
+    release + b:6
 
 # Right Wheel Paste
 "xte 'keydown Control_L' 'key V' 'keyup Control_L'"
-   release + b:7
+    release + b:7
 
 # GNOME Shell Application Overview
 "xte 'keydown Alt_L' 'key F1' 'keyup Alt_L'"
@@ -12,4 +12,4 @@
 
 # Browser Refresh
 "xte 'key F5'"
-   release + b:8
+    release + b:8

@@ -1,7 +1,7 @@
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 # Highlight section titles in manual pages
-export LESS_TERMCAP_md="$ORANGE"
+export LESS_TERMCAP_md=$'\E[1;33m'
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
@@ -9,7 +9,7 @@ export HISTFILESIZE=$HISTSIZE
 # don't put duplicate lines or lines starting with space in the history
 export HISTCONTROL=ignoreboth
 # Make some commands not show up in history
-export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
+export HISTIGNORE="ls:cd:cd -:pwd:exit:date"
 
 # timestamps for bash history. www.debian-administration.org/users/rossen/weblog/1
 # saved for later analysis
