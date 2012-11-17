@@ -7,10 +7,11 @@ git submodule update --init --recursive --quiet
 
 function doIt() {
     rsync --exclude ".DS_Store" -av ./public/ ~
+    echo
 
-    for file in $(ls -A ./private/); do
+    for file in $(find private/ -type f -exec ls {} \; 2> /dev/null | sed 's/private\///'); do
         if [[ $file != '.gitignore' ]]; then
-            echo "Appending private config to $file"
+            echo "Adding private config to $file"
             cat ./private/$file >> ~/$file
         fi
     done
