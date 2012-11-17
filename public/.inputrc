@@ -1,3 +1,5 @@
+### Ubuntu Defaults ###
+
 # some defaults / modifications for the emacs mode
 $if mode=emacs
 
@@ -29,6 +31,8 @@ $endif
 
 $endif
 
+
+### Custom Config ###
 
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
