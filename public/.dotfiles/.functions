@@ -1,3 +1,55 @@
+function cheatsheet() {
+    echo "
+    Functions
+    =========
+    mkd         - Create a new directory and enter it.
+    cp_p        - Copy with progress.
+    fs          - Determine size of a file or total size of a directory.
+    json        - Syntax highlight JSON strings or files.
+    uniencode   - Escape UTF-8 characters into their 3-byte format.
+    unidecode   - Decode \x{ABCD}-style Unicode escape sequences.
+    codepoint   - Get a character’s Unicode code point.
+    extract     - Extract archives - use: extract <file>.
+    sniff       - View HTTP traffic.
+    httpdump    - View HTTP traffic.
+    httpgzip    - Test if HTTP compression (RFC 2616 + SDCH) is enabled for a given URL.
+    dnsrecords  - Get all the DNS records.
+    server      - Start an HTTP server from a directory, optionally specifying the port.
+    phpserver   - Start a PHP server from a directory, optionally specifying the port.
+    gz          - Get gzipped file size.
+    dataurl     - Create a data URL from a file.
+
+    Aliases
+    =======
+    ..          - cd ..
+    ...         - cd ...
+    ....        - cd ....
+    .....       - cd .....
+    ~           - cd ~
+    -           - cd -
+    g           - git
+    s           - subl .
+    l           - List all files.
+    la          - List all files, including dot files.
+    lsd         - List only directories.
+    c           - cat with beautiful colors.
+    gurl        - Gzip-enabled curl.
+    update      - Update installed npm packages and Ruby gems.
+    ipexternal  - Get the internet IP address of the network.
+    iplocal     - List the IP addesses of the computer.
+    flushdns    - Flush the DNS cache.
+    urlencode   - URL-encode strings.
+    GET,POST... - Perform various HTTP method requests.
+    tunnel      - Start the SSH tunnel.
+    tunnelstop  - Stop the SSH tunnel.
+    gitr        - cd to the root git directory.
+    gits        - git status
+    gitd        - git diff --ignore-space-change
+    gita        - git add
+    gitl        - git log --oneline --decorate
+    " | less -FSX # Exit if fits on screen, don't wrap, don't clear screen.
+}
+
 # Create a new directory and enter it
 function mkd() {
     mkdir -p "$@" && cd "$@"
@@ -22,7 +74,7 @@ function fs() {
     fi
 }
 
-# Syntax-highlight JSON strings or files
+# Syntax highlight JSON strings or files
 # Usage: `json '{"foo":42}'` or `echo '{"foo":42}' | json`
 function json() {
     if [ -t 0 ]; then # argument
@@ -74,22 +126,22 @@ function extract() {
 }
 
 # View HTTP traffic
-function sniff {
+function sniff() {
     sudo ngrep -d $1 -t '^(GET|POST) ' 'tcp and port 80';
 }
 
-function httpdump {
+function httpdump() {
     sudo tcpdump -i $1 -n -s 0 -w - | grep -a -o -E "Host\: .*|GET \/.*";
 }
 
 # Test if HTTP compression (RFC 2616 + SDCH) is enabled for a given URL.
 # Send a fake UA string for sites that sniff it instead of using the Accept-Encoding header. (Looking at you, ajax.googleapis.com!)
-function httpcompression() {
+function httpgzip() {
     encoding="$(curl -LIs -H 'User-Agent: Mozilla/5 Gecko' -H 'Accept-Encoding: gzip,deflate,compress,sdch' "$1" | grep '^Content-Encoding:')" && echo "$1 is encoded using ${encoding#* }" || echo "$1 is not using any encoding"
 }
 
-# All the dig info
-function digga() {
+# Get all the DNS records
+function dnsrecords() {
     dig +nocmd "$1" any +multiline +noall +answer
 }
 

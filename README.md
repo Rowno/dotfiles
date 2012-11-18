@@ -42,3 +42,9 @@ Private Config
 --------------
 
 Place any private config, or config that you don't want in version control, in the `private/` directory. Any files in this directory (excluding the `.gitignore`) will be copied along with all the dotfiles in the `public/` directory or appended to dotfiles that already exist.
+
+
+Help
+----
+
+Run `cheatsheet` to get a list/description of all the custom functions and aliases.
