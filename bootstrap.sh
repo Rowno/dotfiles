@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+
 cd "$(dirname "$0")"
 
 git pull
@@ -9,7 +9,7 @@ function doIt() {
     rsync --exclude ".DS_Store" -av ./public/ ~
     echo
 
-    for file in $(find private/ -type f -exec ls {} \; 2> /dev/null | sed 's/private\///'); do
+    for file in $(find private -type f -exec ls {} \; 2> /dev/null | sed 's/private\///'); do
         if [[ $file != '.gitignore' ]]; then
             echo "Adding private config to $file"
             cat ./private/$file >> ~/$file
