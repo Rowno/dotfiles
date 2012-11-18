@@ -51,9 +51,6 @@ function iplocal { netstat -n -t | awk '{print $4}' | grep -o '[0-9]*\.[0-9]*\.[
 # Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
 
-# Flush the DNS cache
-alias flushdns="sudo /etc/init.d/dns-clean"
-
 # URL-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 

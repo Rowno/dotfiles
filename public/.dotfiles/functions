@@ -37,7 +37,6 @@ function cheatsheet() {
     update      - Update installed npm packages and Ruby gems.
     ipexternal  - Get the internet IP address of the network.
     iplocal     - List the IP addesses of the computer.
-    flushdns    - Flush the DNS cache.
     urlencode   - URL-encode strings.
     GET,POST... - Perform various HTTP method requests.
     tunnel      - Start the SSH tunnel.
