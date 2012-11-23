@@ -18,3 +18,7 @@
 
 [push]
     default = simple
+
+[alias]
+    # Delete a branch locally and remotely in one go
+    purge = "!f() { git branch -d $1 && git push --delete origin $1; }; f"
