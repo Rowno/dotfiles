@@ -16,7 +16,7 @@ function cheatsheet() {
     dnsrecords  - Get all the DNS records.
     server      - Start an HTTP server from a directory, optionally specifying the port.
     phpserver   - Start a PHP server from a directory, optionally specifying the port.
-    gz          - Get gzipped file size.
+    gz          - Compare original and gzipped file size.
     dataurl     - Create a data URL from a file.
 
     Aliases
@@ -160,12 +160,13 @@ function phpserver() {
     php -S "${ip}:${port}"
 }
 
-# Get gzipped file size
+# Compare original and gzipped file size
 function gz() {
-    echo "orig size (bytes): "
-    cat "$1" | wc -c
-    echo "gzipped size (bytes): "
-    gzip -c "$1" | wc -c
+    local origsize=$(wc -c < "$1")
+    local gzipsize=$(gzip -c "$1" | wc -c)
+    local ratio=$(echo "$gzipsize * 100/ $origsize" | bc -l)
+    printf "orig: %d bytes\n" "$origsize"
+    printf "gzip: %d bytes (%2.2f%%)\n" "$gzipsize" "$ratio"
 }
 
 # Create a data URL from a file
