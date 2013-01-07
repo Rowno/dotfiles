@@ -13,7 +13,7 @@ function cheatsheet() {
     extract     - Extract archives - use: extract <file>.
     sniff       - View HTTP traffic.
     httpdump    - View HTTP traffic.
-    httpgzip    - Test if HTTP compression (RFC 2616 + SDCH) is enabled for a given URL.
+    httpgz      - Test if HTTP compression (RFC 2616 + SDCH) is enabled for a given URL.
     dnsrecords  - Get all the DNS records.
     server      - Start an HTTP server from a directory, optionally specifying the port.
     phpserver   - Start a PHP server from a directory, optionally specifying the port.
@@ -154,7 +154,7 @@ function httpdump() {
 
 # Test if HTTP compression (RFC 2616 + SDCH) is enabled for a given URL.
 # Send a fake UA string for sites that sniff it instead of using the Accept-Encoding header. (Looking at you, ajax.googleapis.com!)
-function httpgzip() {
+function httpgz() {
     encoding="$(curl -LIs -H 'User-Agent: Mozilla/5 Gecko' -H 'Accept-Encoding: gzip,deflate,compress,sdch' "$1" | grep '^Content-Encoding:')" && echo "$1 is encoded using ${encoding#* }" || echo "$1 is not using any encoding"
 }
 
