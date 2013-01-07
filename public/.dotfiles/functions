@@ -2,6 +2,7 @@ function cheatsheet() {
     echo "
     Functions
     =========
+    calc        - Simple calculator.
     mkd         - Create a new directory and enter it.
     cp_p        - Copy with progress.
     fs          - Determine size of a file or total size of a directory.
@@ -47,6 +48,24 @@ function cheatsheet() {
     gita        - git add
     gitl        - git log --oneline --decorate
     " | less -FSX # Exit if fits on screen, don't wrap, don't clear screen.
+}
+
+# Simple calculator
+function calc() {
+    local result=""
+    result="$(printf "scale=10;$*\n" | bc --mathlib | tr -d '\\\n')"
+    #                       └─ default (when `--mathlib` is used) is 20
+    #
+    if [[ "$result" == *.* ]]; then
+        # improve the output for decimal numbers
+        printf "$result" |
+        sed -e 's/^\./0./'        `# add "0" for cases like ".5"` \
+            -e 's/^-\./-0./'      `# add "0" for cases like "-.5"`\
+            -e 's/0*$//;s/\.$//'   # remove trailing zeros
+    else
+        printf "$result"
+    fi
+    printf "\n"
 }
 
 # Create a new directory and enter it
