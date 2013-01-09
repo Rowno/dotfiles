@@ -42,6 +42,7 @@ function cheatsheet() {
     GET,POST... - Perform various HTTP method requests.
     tunnel      - Start the SSH tunnel.
     tunnelstop  - Stop the SSH tunnel.
+    remotedb    - Chrome for Android remote debugging.
     gitr        - cd to the root git directory.
     gits        - git status
     gitd        - git diff --ignore-space-change
