@@ -1,5 +1,5 @@
-Roland's Dotfiles
-=================
+Dotfiles
+========
 
 This repo contains my Ubuntu/OSX dotfiles, which are based off [mathiasbynens's](https://github.com/mathiasbynens/dotfiles)/[paulirish's](https://github.com/paulirish/dotfiles) dotfiles and [cowboy's prompt](https://github.com/cowboy/dotfiles/blob/master/source/50_prompt.sh).
 
@@ -48,3 +48,11 @@ Help
 ----
 
 Run `cheatsheet` to get a list/description of all the custom functions and aliases.
+
+
+License
+-------
+
+My dotfiles are released under the MIT license.
+
+Copyright © 2012 Roland Warmerdam.
