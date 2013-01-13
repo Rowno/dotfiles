@@ -2,6 +2,7 @@ function cheatsheet() {
     echo "
     Functions
     =========
+    o           - Opens a file, directory or URL in the user's preferred application.
     calc        - Simple calculator.
     mkd         - Create a new directory and enter it.
     cp_p        - Copy with progress.
@@ -49,6 +50,15 @@ function cheatsheet() {
     gita        - git add
     gitl        - git log --oneline --decorate
     " | less -FSX # Exit if fits on screen, don't wrap, don't clear screen.
+}
+
+# Opens a file, directory or URL in the user's preferred application.
+function o() {
+    if [[ "$OSTYPE" =~ ^darwin ]]; then
+        open $1
+    else
+        (xdg-open $1 &> /dev/null &)
+    fi
 }
 
 # Simple calculator
