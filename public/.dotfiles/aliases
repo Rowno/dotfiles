@@ -64,7 +64,7 @@ alias tunnel='sshuttle --daemon --pidfile=/tmp/sshuttle.pid --remote vps --dns 0
 alias tunnelstop='[[ -f /tmp/sshuttle.pid ]] && kill `cat /tmp/sshuttle.pid`'
 
 # Chrome for Android remote debugging
-alias remotedb='adb forward tcp:9222 localabstract:chrome_devtools_remote'
+alias remotedb='adb forward tcp:9222 localabstract:chrome_devtools_remote && o http://localhost:9222/'
 
 # git root
 alias gitr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
