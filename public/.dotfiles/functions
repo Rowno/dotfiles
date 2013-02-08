@@ -44,11 +44,12 @@ function cheatsheet() {
     tunnel      - Start the SSH tunnel.
     tunnelstop  - Stop the SSH tunnel.
     remotedb    - Chrome for Android remote debugging.
-    gitr        - cd to the root git directory.
     gits        - git status
     gitd        - git diff --ignore-space-change
     gita        - git add
     gitl        - git log --oneline --decorate
+    gitr        - cd to the root git directory.
+    gitpurge    - Delete all merged branches locally and remotely.
     " | less -FSX # Exit if fits on screen, don't wrap, don't clear screen.
 }
 

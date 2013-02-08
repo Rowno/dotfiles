@@ -102,3 +102,9 @@ __git_shortcut gitl log --oneline --decorate
 # git root
 alias gitr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
+# Delete all merged branches locally and remotely
+function gitpurge() {
+    local branches=$(git branch --merged | grep -v "\*")
+    echo $branches | xargs -n 1 git branch --delete
+    echo $branches | xargs -n 1 git push --delete origin
+}
