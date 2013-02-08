@@ -94,10 +94,12 @@ __git_shortcut () {
     complete -o default -o nospace -F _git_$2_shortcut $1
 }
 
-__git_shortcut gits status
-__git_shortcut gitd diff --ignore-space-change
-__git_shortcut gita add
-__git_shortcut gitl log --oneline --decorate
+__git_shortcut gits     status
+__git_shortcut gitd     diff --ignore-space-change
+__git_shortcut gitds    diff --ignore-space-change --staged
+__git_shortcut gita     add
+__git_shortcut gitl     log --oneline --decorate
+
 
 # git root
 alias gitr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'

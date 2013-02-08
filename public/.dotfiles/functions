@@ -46,6 +46,7 @@ function cheatsheet() {
     remotedb    - Chrome for Android remote debugging.
     gits        - git status
     gitd        - git diff --ignore-space-change
+    gitds       - git diff --ignore-space-change --staged
     gita        - git add
     gitl        - git log --oneline --decorate
     gitr        - cd to the root git directory.
