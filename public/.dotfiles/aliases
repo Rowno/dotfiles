@@ -66,11 +66,39 @@ alias tunnelstop='[[ -f /tmp/sshuttle.pid ]] && kill `cat /tmp/sshuttle.pid`'
 # Chrome for Android remote debugging
 alias remotedb='adb forward tcp:9222 localabstract:chrome_devtools_remote && o http://localhost:9222/'
 
+
+#
+# Git Aliases
+#
+
+# Credit to @bronson
+# https://github.com/bronson/dotfiles/blob/master/.bashrc#L94%3aL132
+__define_git_completion () {
+eval "
+    _git_$2_shortcut () {
+        COMP_LINE=\"git $2\${COMP_LINE#$1}\"
+        let COMP_POINT+=$((4+${#2}-${#1}))
+        COMP_WORDS=(git $2 \"\${COMP_WORDS[@]:1}\")
+        let COMP_CWORD+=1
+
+        local cur words cword prev
+        _get_comp_words_by_ref -n =: cur words cword prev
+        _git_$2
+    }
+"
+}
+__git_shortcut () {
+    type _git_$2_shortcut &>/dev/null || __define_git_completion $1 $2
+    local args=${@: 3}
+    alias $1="git $2 $args"
+    complete -o default -o nospace -F _git_$2_shortcut $1
+}
+
+__git_shortcut gits status
+__git_shortcut gitd diff --ignore-space-change
+__git_shortcut gita add
+__git_shortcut gitl log --oneline --decorate
+
 # git root
 alias gitr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
-# git shortcuts
-alias gits='git status'
-alias gitd='git diff --ignore-space-change'
-alias gita='git add'
-alias gitl='git log --oneline --decorate'
