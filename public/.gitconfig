@@ -7,6 +7,7 @@
     whitespace = space-before-tab,trailing-space
     # Edit commit messages in Sublime Text
     editor = subl -w
+    excludesfile = ~/.dotfiles/gitignore-global
 
 [color]
     # Use colors in Git commands that are capable of colored output when outputting to the terminal
