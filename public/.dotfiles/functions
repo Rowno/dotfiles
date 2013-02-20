@@ -51,6 +51,7 @@ function cheatsheet() {
     gitl        - git log --oneline --decorate
     gitr        - cd to the root git directory.
     gitpurge    - Delete all merged branches locally and remotely.
+    gitpush     - Push the current branch to origin and track it.
     " | less -FSX # Exit if fits on screen, don't wrap, don't clear screen.
 }
 
