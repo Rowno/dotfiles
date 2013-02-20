@@ -1,28 +1,5 @@
 function cheatsheet() {
     echo "
-    Functions
-    =========
-    o           - Opens a file, directory or URL in the user's preferred application.
-    calc        - Simple calculator.
-    mkd         - Create a new directory and enter it.
-    cp_p        - Copy with progress.
-    fs          - Determine size of a file or total size of a directory.
-    json        - Syntax highlight JSON strings or files.
-    uniencode   - Escape UTF-8 characters into their 3-byte format.
-    unidecode   - Decode \x{ABCD}-style Unicode escape sequences.
-    codepoint   - Get a character’s Unicode code point.
-    extract     - Extract archives - use: extract <file>.
-    sniff       - View HTTP traffic.
-    httpdump    - View HTTP traffic.
-    httpgz      - Test if HTTP compression (RFC 2616 + SDCH) is enabled for a given URL.
-    dnsrecords  - Get all the DNS records.
-    server      - Start an HTTP server from a directory, optionally specifying the port.
-    phpserver   - Start a PHP server from a directory, optionally specifying the port.
-    gz          - Compare original and gzipped file size.
-    dataurl     - Create a data URL from a file.
-
-    Aliases
-    =======
     ..          - cd ..
     ...         - cd ...
     ....        - cd ....
@@ -52,10 +29,29 @@ function cheatsheet() {
     gitr        - cd to the root git directory.
     gitpurge    - Delete all merged branches locally and remotely.
     gitpush     - Push the current branch to origin and track it.
+
+    o           - Opens a file, directory or URL in the preferred application.
+    calc        - Simple calculator.
+    mkd         - Create a new directory and enter it.
+    cp_p        - Copy with progress.
+    fs          - Determine size of a file or total size of a directory.
+    json        - Syntax highlight JSON strings or files.
+    uniencode   - Escape UTF-8 characters into their 3-byte format.
+    unidecode   - Decode \x{ABCD}-style Unicode escape sequences.
+    codepoint   - Get a character’s Unicode code point.
+    extract     - Extract archives - use: extract <file>.
+    sniff       - View HTTP traffic.
+    httpdump    - View HTTP traffic.
+    httpgz      - Test if HTTP compression (RFC 2616 + SDCH) is enabled for a given URL.
+    dnsrecords  - Get all the DNS records.
+    server      - Start an HTTP server from a directory, optionally specifying the port.
+    phpserver   - Start a PHP server from a directory, optionally specifying the port.
+    gz          - Compare original and gzipped file size.
+    dataurl     - Create a data URL from a file.
     " | less -FSX # Exit if fits on screen, don't wrap, don't clear screen.
 }
 
-# Opens a file, directory or URL in the user's preferred application.
+# Opens a file, directory or URL in the preferred application.
 function o() {
     if [[ "$OSTYPE" =~ ^darwin ]]; then
         open $1
