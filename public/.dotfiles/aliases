@@ -99,7 +99,7 @@ __git_shortcut gitds    diff --ignore-space-change --staged
 __git_shortcut gita     add
 __git_shortcut gitl     log --oneline --decorate
 
-alias gits="status"
+alias gits="git status"
 
 # git root
 alias gitr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
