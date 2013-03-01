@@ -29,6 +29,9 @@ function cheatsheet() {
     gitr        - cd to the root git directory.
     gitpurge    - Delete all merged branches locally and remotely.
     gitpush     - Push the current branch to origin and track it.
+    gitignore   - Ignore changes on a tracked file.
+    gitunignore - Stop ignoring changes on a tracked file.
+    gitignored  - List tracked files set to ignore changes.
 
     o           - Opens a file, directory or URL in the preferred application.
     calc        - Simple calculator.

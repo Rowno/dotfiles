@@ -116,3 +116,12 @@ function gitpush() {
     local branch=$(git branch | grep "\*" | cut -c 3-)
     git push -u origin $branch
 }
+
+# Ignore changes on a tracked file
+alias gitignore="git update-index --assume-unchanged"
+
+# Stop ignoring changes on a tracked file
+alias gitunignore="git update-index --no-assume-unchanged"
+
+# List tracked files set to ignore changes
+alias gitignored="git ls-files -v | grep '^[a-z]'"
