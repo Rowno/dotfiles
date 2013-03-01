@@ -27,7 +27,7 @@ function cheatsheet() {
     gita        - git add
     gitl        - git log --oneline --decorate
     gitr        - cd to the root git directory.
-    gitpurge    - Delete all merged branches locally and remotely.
+    gitprune    - Delete all merged branches locally and remotely.
     gitpush     - Push the current branch to origin and track it.
     gitignore   - Ignore changes on a tracked file.
     gitunignore - Stop ignoring changes on a tracked file.
