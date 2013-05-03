@@ -17,3 +17,6 @@ export HISTIGNORE="ls:cd:cd -:pwd:exit:date"
 # timestamps for bash history. www.debian-administration.org/users/rossen/weblog/1
 # saved for later analysis
 export HISTTIMEFORMAT='%F %T '
+
+# Manually load z in `bash_prompt` to allow the exit code to be printed
+export _Z_NO_PROMPT_COMMAND=1
