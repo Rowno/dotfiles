@@ -1,0 +1,7 @@
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH"
+
+# Install npm packages globally without sudo
+export PATH="$NPM_CONFIG_PREFIX/bin:$PATH"
+export MANPATH="$NPM_CONFIG_PREFIX/share/man:$MANPATH"
+export NODE_PATH="$NPM_CONFIG_PREFIX/lib/node_modules:$NODE_PATH"

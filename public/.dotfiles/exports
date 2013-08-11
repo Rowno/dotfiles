@@ -17,3 +17,6 @@ export HISTIGNORE="ls:cd:cd -:pwd:exit:date"
 # timestamps for bash history. www.debian-administration.org/users/rossen/weblog/1
 # saved for later analysis
 export HISTTIMEFORMAT='%F %T '
+
+# Install npm packages globally without sudo
+export NPM_CONFIG_PREFIX='~/.npm-packages'

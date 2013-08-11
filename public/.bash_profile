@@ -1,9 +1,6 @@
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH"
-
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
-for file in ~/.dotfiles/{path,bash_prompt,exports,aliases,functions}; do
+for file in ~/.dotfiles/{exports,path,bash_prompt,aliases,functions}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
