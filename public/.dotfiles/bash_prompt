@@ -94,8 +94,13 @@ function prompt_command() {
     [[ "$simple_prompt" ]] && PS1='\n$ ' && return
 
     prompt_getcolors
+
     # http://twitter.com/cowboy/status/150254030654939137
-    PS1="\n"
+
+    # window title
+    PS1="\[\e]0;\w\a\]"
+
+    PS1="$PS1\n"
     # misc: [cmd#:hist#]
     # PS1="$PS1$c1[$c0#\#$c1:$c0!\!$c1]$c9"
     # path: user at host in path
