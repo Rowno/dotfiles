@@ -118,6 +118,11 @@ function gitpush() {
     git push -u origin $branch
 }
 
+# Fetch a pull request to a local branch
+function gitfetchpr() {
+    git fetch origin pull/$1/head:$2
+}
+
 # Ignore changes on a tracked file
 alias gitignore="git update-index --assume-unchanged"
 

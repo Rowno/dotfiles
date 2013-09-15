@@ -27,6 +27,7 @@ gitl        - git log --oneline --decorate
 gitr        - cd to the root git directory.
 gitprune    - Delete all merged branches locally and remotely.
 gitpush     - Push the current branch to origin and track it.
+gitfetchpr  - Fetch a pull request to a local branch.
 gitignore   - Ignore changes on a tracked file.
 gitunignore - Stop ignoring changes on a tracked file.
 gitignored  - List tracked files set to ignore changes.
