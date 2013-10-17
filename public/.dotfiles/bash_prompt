@@ -96,7 +96,7 @@ function prompt_svn() {
     if [[ "$info" ]]; then
         last="$(echo "$info" | awk '/Last Changed Rev:/ {print $4}')"
         current="$(echo "$info" | awk '/Revision:/ {print $2}')"
-        echo "$c0$last$c1:$c0$current$c9"
+        echo "$c1 on $c0$last$c1:$c0$current$c9"
     fi
 }
 
