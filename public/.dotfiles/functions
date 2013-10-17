@@ -3,12 +3,18 @@ function cheatsheet() {
     cat ~/.dotfiles/cheatsheet | less -FSX
 }
 
-# Opens a file, directory or URL in the preferred application.
+# Opens the current directory, otherwise opens the given file, directory or URL
 function o() {
+    local parameter="$@"
+
+    if [ $# -eq 0 ]; then
+        parameter="."
+    fi
+
     if [[ "$OSTYPE" =~ ^darwin ]]; then
-        open $1
+        open $parameter
     else
-        (xdg-open $1 &> /dev/null &)
+        (xdg-open $parameter &> /dev/null &)
     fi
 }
 

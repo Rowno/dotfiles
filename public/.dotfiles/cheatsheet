@@ -32,7 +32,7 @@ gitignore   - Ignore changes on a tracked file.
 gitunignore - Stop ignoring changes on a tracked file.
 gitignored  - List tracked files set to ignore changes.
 
-o           - Opens a file, directory or URL in the preferred application.
+o           - Opens the current directory, otherwise opens the given file, directory or URL.
 calc        - Simple calculator.
 mkd         - Create a new directory and enter it.
 cp_p        - Copy with progress.
