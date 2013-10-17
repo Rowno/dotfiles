@@ -4,7 +4,6 @@
 .....       - cd .....
 ~           - cd ~
 -           - cd -
-g           - git
 l           - List all files.
 la          - List all files, including dot files.
 lsd         - List only directories.
