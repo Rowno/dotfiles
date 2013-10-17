@@ -67,6 +67,27 @@ function prompt_git() {
     echo "$c1 on $c0$output$c9"
 }
 
+# Mercurial status.
+function prompt_hg() {
+    prompt_getcolors
+    local summary output bookmark flags
+    summary="$(hg summary 2>/dev/null)"
+    [[ $? != 0 ]] && return;
+    output="$(echo "$summary" | awk '/branch:/ {print $2}')"
+    bookmark="$(echo "$summary" | awk '/bookmarks:/ {print $2}')"
+    flags="$(
+        echo "$summary" | awk 'BEGIN {r="";a=""} \
+            /(modified)/     {r= "+"}\
+            /(unknown)/      {a= "?"}\
+            END {print r a}'
+    )"
+    output="$output:$bookmark"
+    if [[ "$flags" ]]; then
+        output="$output$c1:$c0$flags"
+    fi
+    echo "$c1 on $c0$output$c9"
+}
+
 # SVN info.
 function prompt_svn() {
     prompt_getcolors
@@ -101,14 +122,15 @@ function prompt_command() {
     PS1="\[\e]0;\w\a\]"
 
     PS1="$PS1\n"
-    # misc: [cmd#:hist#]
     # PS1="$PS1$c1[$c0#\#$c1:$c0!\!$c1]$c9"
     # path: user at host in path
     PS1="$PS1$c0\u$c1 at $c0\h$c1 in $c0\w$c9"
-    # svn: [repo:lastchanged]
-    PS1="$PS1$(prompt_svn)"
-    # git: [branch:flags]
+    # git: on branch:flags
     PS1="$PS1$(prompt_git)"
+    # hg: on branch:flags
+    PS1="$PS1$(prompt_hg)"
+    # svn: on repo:lastchanged
+    PS1="$PS1$(prompt_svn)"
     PS1="$PS1\n"
     # date: HH:MM:SS
     PS1="$PS1$c0$(date +"%H$c1:$c0%M$c1:$c0%S")$c9"
