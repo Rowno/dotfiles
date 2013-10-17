@@ -18,6 +18,19 @@ function o() {
     fi
 }
 
+# Opens the current directory or project in Sublime, otherwise opens the given path.
+function s() {
+    if [ $# -eq 0 ]; then
+        if [ -f .sublime-project ]; then
+            (subl --project .sublime-project &> /dev/null &)
+        else
+            (subl . &> /dev/null &)
+        fi
+    else
+        (subl "$@" &> /dev/null &)
+    fi
+}
+
 # Simple calculator
 function calc() {
     local result=""
