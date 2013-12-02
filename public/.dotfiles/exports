@@ -19,4 +19,4 @@ export HISTIGNORE="ls:cd:cd -:pwd:exit:date"
 export HISTTIMEFORMAT='%F %T '
 
 # Install npm packages globally without sudo
-export NPM_CONFIG_PREFIX='~/.npm-packages'
+export NPM_CONFIG_PREFIX="$HOME/.npm-packages"
