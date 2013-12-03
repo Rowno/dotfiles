@@ -115,7 +115,8 @@ function gitpush() {
 
 # Fetch a pull request to a local branch
 function gitfetchpr() {
-    git fetch origin pull/$1/head:$2
+    local localBranch="${2:-$1}"
+    git fetch origin pull/$1/head:$localBranch
 }
 
 # Ignore changes on a tracked file
