@@ -24,7 +24,7 @@ alias l="ls -lF ${colorflag}"
 alias la="ls -laF ${colorflag}"
 
 # List only directories
-alias lsd='ls -lF ${colorflag} | grep "^d"'
+alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
 # `cat` with beautiful colors. requires Pygments installed.
 #                              sudo easy_install Pygments
