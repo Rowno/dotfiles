@@ -42,7 +42,7 @@ alias update='sudo npm update -g; sudo gem update'
 
 # IP addresses
 alias ipexternal="dig +short myip.opendns.com @resolver1.opendns.com"
-function iplocal { netstat -n -t | awk '{print $4}' | grep -o '[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*' | grep -v '127.0.0.1' | sort -u; }
+alias iplocal="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
 # Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
