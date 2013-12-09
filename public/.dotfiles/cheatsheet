@@ -49,3 +49,4 @@ server      - Start an HTTP server from a directory, optionally specifying the p
 phpserver   - Start a PHP server from a directory, optionally specifying the port.
 gz          - Compare original and gzipped file size.
 dataurl     - Create a data URL from a file.
+npmls       - `npm ls` without all the dependency fluff.
