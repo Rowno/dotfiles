@@ -16,7 +16,6 @@ urlencode   - URL-encode strings.
 GET,POST... - Perform various HTTP method requests.
 tunnel      - Start the SSH tunnel.
 tunnelstop  - Stop the SSH tunnel.
-remotedb    - Chrome for Android remote debugging.
 gits        - git status
 gitd        - git diff --ignore-space-change
 gitds       - git diff --ignore-space-change --staged
