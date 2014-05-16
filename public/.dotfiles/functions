@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 function cheatsheet() {
     # Exit if fits on screen, don't wrap, don't clear screen
     cat ~/.dotfiles/cheatsheet | less -FSX

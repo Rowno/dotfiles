@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # My awesome bash prompt
 #
 # Based on cowboy's prompt:

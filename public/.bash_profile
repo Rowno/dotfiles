@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 for file in ~/.dotfiles/{exports,path,bash_prompt,aliases,functions}; do
