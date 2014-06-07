@@ -6,8 +6,8 @@
 "xte 'keydown Control_L' 'key V' 'keyup Control_L'"
     release + b:7
 
-# GNOME Shell Application Overview
-"xte 'keydown Alt_L' 'key F1' 'keyup Alt_L'"
+# Unity - spread all windows in current workspace
+"xte 'keydown Super_L' 'key W' 'keyup Super_L'"
     release + b:10
 
 # Browser Refresh
