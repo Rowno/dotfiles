@@ -5,8 +5,8 @@
 [core]
     # Treat spaces before tabs and all kinds of trailing whitespace as an error
     whitespace = space-before-tab,trailing-space
-    # Edit commit messages in Atom
-    editor = atom --wait
+    # Edit commit messages in Sublime Text
+    editor = subl -w
     excludesfile = ~/.dotfiles/gitignore-global
     # Make `git rebase` safer on OS X
     # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
