@@ -14,6 +14,8 @@ function doIt() {
         fi
     done
     unset file
+
+    source ~/.bash_profile
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
@@ -27,4 +29,3 @@ else
 fi
 
 unset doIt
-source ~/.bash_profile
