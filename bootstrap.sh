@@ -4,7 +4,7 @@ git pull
 git submodule update --init --recursive --quiet
 
 function doIt() {
-    rsync --exclude ".DS_Store" -avh ./public/ ~
+    rsync -avh --no-perms --exclude ".DS_Store" public/ ~
     echo
 
     for file in $(find private -type f -exec ls {} \; 2> /dev/null | sed 's/private\///'); do
