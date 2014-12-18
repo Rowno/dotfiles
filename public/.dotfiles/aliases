@@ -35,9 +35,6 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
-# Gzip-enabled `curl`
-alias gurl="curl --compressed"
-
 # Update installed npm packages and Ruby gems
 alias update='sudo npm update -g; sudo gem update'
 
@@ -45,16 +42,8 @@ alias update='sudo npm update -g; sudo gem update'
 alias ipexternal="dig +short myip.opendns.com @resolver1.opendns.com"
 alias iplocal="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
-# Enhanced WHOIS lookups
-alias whois="whois -h whois-servers.net"
-
 # URL-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
-
-# One of @janmoesen’s ProTip™s
-for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
-    alias "$method"="lwp-request -m '$method'"
-done
 
 # SSH tunnel
 alias tunnel='sshuttle --daemon --pidfile=/tmp/sshuttle.pid --remote vps --dns 0/0'

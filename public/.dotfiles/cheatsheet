@@ -8,12 +8,10 @@ l            - List all files in long format.
 la           - List all files in long format, including dot files.
 lsd          - List only directories.
 c            - cat with beautiful colors.
-gurl         - Gzip-enabled curl.
 update       - Update installed npm packages and Ruby gems.
 ipexternal   - Get the internet IP address of the network.
 iplocal      - List the IP addesses of the computer.
 urlencode    - URL-encode strings.
-GET,POST...  - Perform various HTTP method requests.
 tunnel       - Start the SSH tunnel.
 tunnelstop   - Stop the SSH tunnel.
 nodesecurity - Checks the current Node.js project's dependencies for known security issues.
