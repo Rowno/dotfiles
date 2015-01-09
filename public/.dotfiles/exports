@@ -25,3 +25,5 @@ export HISTTIMEFORMAT='%F %T '
 # Install npm packages globally without sudo
 # (using an uppercase variable is currently broken in npm)
 export npm_config_prefix="$HOME/.npm-packages"
+
+export _Z_NO_PRUNE=true
