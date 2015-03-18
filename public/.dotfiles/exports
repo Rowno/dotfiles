@@ -15,8 +15,6 @@ export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 # don't put duplicate lines or lines starting with space in the history
 export HISTCONTROL=ignoreboth
-# Make some commands not show up in history
-export HISTIGNORE="ls:cd:cd -:pwd:exit:date"
 
 # timestamps for bash history. www.debian-administration.org/users/rossen/weblog/1
 # saved for later analysis
