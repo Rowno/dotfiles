@@ -1,50 +1,50 @@
-..           - cd ..
-...          - cd ...
-....         - cd ....
-.....        - cd .....
-~            - cd ~
--            - cd -
-l            - List all files in long format.
-la           - List all files in long format, including dot files.
-lsd          - List only directories.
-c            - cat with beautiful colors.
-update       - Update installed npm packages and Ruby gems.
-ipexternal   - Get the internet IP address of the network.
-iplocal      - List the IP addesses of the computer.
-urlencode    - URL-encode strings.
-tunnel       - Start the SSH tunnel.
-tunnelstop   - Stop the SSH tunnel.
-nodesecurity - Checks the current Node.js project's dependencies for known security issues.
-gits         - git status
-gitd         - git diff --ignore-space-change
-gitds        - git diff --ignore-space-change --staged
-gita         - git add
-gitl         - git log --oneline --decorate
-gitr         - cd to the root git directory.
-gitprune     - Delete all merged branches locally and remotely.
-gitpush      - Push the current branch to origin and track it.
-gitfetchpr   - Fetch a pull request to a local branch.
-gitignore    - Ignore changes on a tracked file.
-gitunignore  - Stop ignoring changes on a tracked file.
-gitignored   - List tracked files set to ignore changes.
+..              - cd ..
+...             - cd ...
+....            - cd ....
+.....           - cd .....
+~               - cd ~
+-               - cd -
+l               - List all files in long format.
+la              - List all files in long format, including dot files.
+lsd             - List only directories.
+c               - cat with beautiful colors.
+update          - Update installed npm packages and Ruby gems.
+ipexternal      - Get the internet IP address of the network.
+iplocal         - List the IP addesses of the computer.
+urlencode       - URL-encode strings.
+tunnel          - Start the SSH tunnel.
+tunnelstop      - Stop the SSH tunnel.
+nodesecurity    - Checks the current Node.js project's dependencies for known security issues.
+gits            - git status
+gitd            - git diff --ignore-space-change
+gitds           - git diff --ignore-space-change --staged
+gita            - git add
+gitl            - git log --oneline --decorate
+gitr            - cd to the root git directory.
+gitprune        - Delete all merged branches locally and remotely.
+gitpush         - Push the current branch to origin and track it.
+gitfetchpr      - Fetch a pull request to a local branch.
+gitignore       - Ignore changes on a tracked file.
+gitunignore     - Stop ignoring changes on a tracked file.
+gitignored      - List tracked files set to ignore changes.
 
-o            - Opens the current directory, otherwise opens the given file, directory or URL.
-s            - Opens the current directory or project in Sublime, otherwise opens the given path.
-calc         - Simple calculator.
-mkd          - Create a new directory and enter it.
-cp_p         - Copy with progress.
-fs           - Determine size of a file or total size of a directory.
-json         - Syntax highlight JSON strings or files.
-uniencode    - Escape UTF-8 characters into their 3-byte format.
-unidecode    - Decode \x{ABCD}-style Unicode escape sequences.
-codepoint    - Get a character’s Unicode code point.
-extract      - Extract archives - use: extract <file>.
-sniff        - View HTTP traffic.
-httpdump     - View HTTP traffic.
-httpgz       - Test if HTTP compression (RFC 2616 + SDCH) is enabled for a given URL.
-dnsrecords   - Get all the DNS records.
-server       - Start an HTTP server from a directory, optionally specifying the port.
-phpserver    - Start a PHP server from a directory, optionally specifying the port.
-gz           - Compare original and gzipped file size.
-dataurl      - Create a data URL from a file.
-npmls        - `npm ls` without all the dependency fluff.
+o               - Opens the current directory, otherwise opens the given file, directory or URL.
+s               - Opens the current directory or project in Sublime, otherwise opens the given path.
+calc            - Simple calculator.
+mkd             - Create a new directory and enter it.
+cp_p            - Copy with progress.
+fs              - Determine size of a file or total size of a directory.
+json            - Syntax highlight JSON strings or files.
+uniencode       - Escape UTF-8 characters into their 3-byte format.
+unidecode       - Decode \x{ABCD}-style Unicode escape sequences.
+codepoint       - Get a character’s Unicode code point.
+extract         - Extract archives - use: extract <file>.
+sniff           - View HTTP traffic.
+httpdump        - View HTTP traffic.
+httpcompression - Provides the content encoding the specified resources are served with.
+dnsrecords      - Get all the DNS records.
+server          - Start an HTTP server from a directory, optionally specifying the port.
+phpserver       - Start a PHP server from a directory, optionally specifying the port.
+gz              - Compare original and gzipped file size.
+dataurl         - Create a data URL from a file.
+npmls           - `npm ls` without all the dependency fluff.

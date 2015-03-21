@@ -158,12 +158,6 @@ function httpdump() {
     sudo tcpdump -i $1 -n -s 0 -w - | grep -a -o -E "Host\: .*|GET \/.*";
 }
 
-# Test if HTTP compression (RFC 2616 + SDCH) is enabled for a given URL.
-# Send a fake UA string for sites that sniff it instead of using the Accept-Encoding header. (Looking at you, ajax.googleapis.com!)
-function httpgz() {
-    encoding="$(curl -LIs -H 'User-Agent: Mozilla/5 Gecko' -H 'Accept-Encoding: gzip,deflate,compress,sdch' "$1" | grep '^Content-Encoding:')" && echo "$1 is encoded using ${encoding#* }" || echo "$1 is not using any encoding"
-}
-
 # Get all the DNS records
 function dnsrecords() {
     dig +nocmd "$1" any +multiline +noall +answer
