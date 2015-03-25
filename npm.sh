@@ -5,6 +5,7 @@ npm install -g castnow
 npm install -g david
 npm install -g grunt-cli
 npm install -g gulp
+npm install -g eslint
 npm install -g jshint
 npm install -g jsxhint
 npm install -g node-inspector
