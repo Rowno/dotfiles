@@ -13,6 +13,7 @@ npm install -g gulp
 npm install -g jshint
 npm install -g n
 npm install -g node-inspector
+npm install -g speed-test
 npm install -g tcpie
 npm install -g trash
 npm install -g vtop
