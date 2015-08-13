@@ -20,6 +20,6 @@ npm install -g vtop
 npm install -g yo
 
 n 0.10
-n 0.12
 n io latest
+n 0.12
 npm install -g npm
