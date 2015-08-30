@@ -7,10 +7,8 @@ npm install -g bower
 npm install -g castnow
 npm install -g david
 npm install -g dependency-check
-npm install -g eslint
 npm install -g grunt-cli
 npm install -g gulp
-npm install -g jshint
 npm install -g n
 npm install -g node-inspector
 npm install -g speed-test
