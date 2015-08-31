@@ -61,3 +61,5 @@ setopt rm_star_wait
 source ~/.dotfiles/vendor/z/z.sh
 autoload -U promptinit && promptinit
 prompt pure
+
+source ~/.dotfiles/aliases.sh
