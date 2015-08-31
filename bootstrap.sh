@@ -12,7 +12,7 @@ echo
 
 echo "● Adding private config to dotfiles"
 for file in $(find private -type f -exec ls {} \; 2> /dev/null | sed 's/private\///'); do
-    if [[ $file != '.gitignore' ]]; then
+    if [[ $file != '.gitignore' ]] && [[ $file != '.DS_Store' ]]; then
         echo $file
         cat ./private/$file >> ~/$file
     fi
