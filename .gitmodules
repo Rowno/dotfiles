@@ -1,3 +1,6 @@
 [submodule "public/.dotfiles/libs/z"]
-	path = public/.dotfiles/libs/z
+	path = public/.dotfiles/vendor/z
 	url = https://github.com/rupa/z.git
+[submodule "public/.dotfiles/vendor/pure"]
+	path = public/.dotfiles/vendor/pure
+	url = https://github.com/sindresorhus/pure.git

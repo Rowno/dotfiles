@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH"
-
-# Install npm packages globally without sudo
-export PATH="$npm_config_prefix/bin:$PATH"
-export MANPATH="$npm_config_prefix/share/man:$MANPATH"
-export NODE_PATH="$npm_config_prefix/lib/node_modules:$NODE_PATH"

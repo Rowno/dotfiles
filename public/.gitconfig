@@ -22,6 +22,7 @@
 
 [push]
     default = simple
+    followTags = true
 
 [help]
     autocorrect = 1

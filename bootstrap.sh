@@ -1,31 +1,23 @@
 #!/usr/bin/env bash
 
+#chsh -s /bin/zsh
+echo "● Checking for updates"
 git pull
 git submodule update --init --recursive --quiet
+echo
 
-function doIt() {
-    rsync -avh --no-perms --exclude ".DS_Store" public/ ~
-    echo
+echo "● Copying dotfiles"
+rsync -aih --no-perms --exclude ".DS_Store" public/ ~
+echo
 
-    for file in $(find private -type f -exec ls {} \; 2> /dev/null | sed 's/private\///'); do
-        if [[ $file != '.gitignore' ]]; then
-            echo "Adding private config to $file"
-            cat ./private/$file >> ~/$file
-        fi
-    done
-    unset file
-
-    source ~/.bash_profile
-}
-
-if [ "$1" == "--force" -o "$1" == "-f" ]; then
-    doIt
-else
-    read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1
-    echo
-    if [[ $REPLY =~ ^[Yy]$ ]]; then
-        doIt
+echo "● Adding private config to dotfiles"
+for file in $(find private -type f -exec ls {} \; 2> /dev/null | sed 's/private\///'); do
+    if [[ $file != '.gitignore' ]]; then
+        echo $file
+        cat ./private/$file >> ~/$file
     fi
-fi
+done
+unset file
+echo
 
-unset doIt
+echo "● Done"
