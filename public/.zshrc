@@ -1,7 +1,7 @@
 export EDITOR="nano"
 export VISUAL=$EDITOR
 bindkey -e
-export HISTFILE=~/.histfile
+export HISTFILE=~/.zsh_history
 export HISTSIZE=32768
 export SAVEHIST=$HISTSIZE
 
