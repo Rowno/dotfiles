@@ -18,7 +18,6 @@ typeset -U path
 typeset -U manpath
 typeset -UT NODE_PATH nodepath
 fpath=("$HOME/.dotfiles/zfunctions" $fpath)
-fpath=(/usr/local/share/zsh-completions $fpath)
 path=("$HOME/bin" $path)
 
 # Install npm packages globally without sudo
@@ -31,6 +30,12 @@ nodepath=("$npm_config_prefix/lib/node_modules" $nodepath)
 
 autoload -Uz compinit
 compinit
+# Extra completions from brew zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+# Autocomplete grunt commands
+which grunt &> /dev/null && eval "$(grunt --completion=zsh)"
+# Autocomplete gulp commands
+which gulp &> /dev/null && eval "$(gulp --completion=zsh)"
 
 
 # Search history for partially entered command using up and down keys
