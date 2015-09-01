@@ -42,29 +42,32 @@ which gulp &> /dev/null && eval "$(gulp --completion=zsh)"
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
 
-# Allows parallel zsh sessions to save history without overriding each other
-setopt append_history
 # cd by 'executing' a directory
 setopt auto_cd
-# Terminal beeps
-setopt beep
 # Command spellchecking
 setopt correct
+# Allow completions in both directions
+setopt complete_in_word
+# Allow functions to have local options
+setopt local_options
 # Extended glob features
 # http://www.refining-linux.org/archives/37/ZSH-Gem-2-Extended-globbing-and-expansion/
 setopt extended_glob
-# Remove history duplicates
-setopt hist_ignore_all_dups
-# Error when a glob doesn't match
-setopt nomatch
-# Prevent exiting background tasks from messing up the terminal
-setopt notify
 # Wait before executing an rm ending in * (as a warning)
 setopt rm_star_wait
 
+# Remove history duplicates
+setopt hist_ignore_all_dups
+# Trim whitespace from history lines
+setopt hist_reduce_blanks
+# Don't execute history expansion automatically
+setopt hist_verify
+# Share history between parallel sessions
+setopt share_history
+
 
 source ~/.dotfiles/vendor/z/z.sh
-autoload -U promptinit && promptinit
+autoload -Uz promptinit && promptinit
 prompt pure
 
 source ~/.dotfiles/aliases.sh
