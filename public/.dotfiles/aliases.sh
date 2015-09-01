@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 
-# Easier navigation: .., ..., ...., ....., ~ and -
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
+# Easier navigation: ..., ...., ..... and -
+alias -g ...="../.."
+alias -g ....="../../.."
+alias -g .....="../../../.."
 alias -- -="cd -"
 
 # Detect which `ls` flavor is in use
