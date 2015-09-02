@@ -22,10 +22,10 @@ path=("$HOME/bin" $path)
 
 # Install npm packages globally without sudo
 export NPM_CONFIG_PREFIX="$HOME/.npm-packages"
-export N_PREFIX=$npm_config_prefix
-path=("$npm_config_prefix/bin" $path)
-manpath=("$npm_config_prefix/share/man" $manpath)
-nodepath=("$npm_config_prefix/lib/node_modules" $nodepath)
+export N_PREFIX=$NPM_CONFIG_PREFIX
+path=("$NPM_CONFIG_PREFIX/bin" $path)
+manpath=("$NPM_CONFIG_PREFIX/share/man" $manpath)
+nodepath=("$NPM_CONFIG_PREFIX/lib/node_modules" $nodepath)
 
 
 autoload -Uz compinit
