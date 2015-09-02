@@ -21,7 +21,7 @@ fpath=("$HOME/.dotfiles/zfunctions" $fpath)
 path=("$HOME/bin" $path)
 
 # Install npm packages globally without sudo
-export npm_config_prefix="$HOME/.npm-packages"
+export NPM_CONFIG_PREFIX="$HOME/.npm-packages"
 export N_PREFIX=$npm_config_prefix
 path=("$npm_config_prefix/bin" $path)
 manpath=("$npm_config_prefix/share/man" $manpath)
