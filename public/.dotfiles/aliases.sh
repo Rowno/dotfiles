@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+# Prints a cheatsheet of all the aliases and functions
+alias cheatsheet="cat ~/.dotfiles/cheatsheet.txt | less --quit-if-one-screen --chop-long-lines --no-init"
 
 # Easier navigation: ..., ...., ..... and -
 alias -g ...="../.."
@@ -25,16 +26,8 @@ alias la="ls -la"
 # List only directories
 alias lsd='ls -l | grep --color=never "^d"'
 
-# `cat` with beautiful colors. requires Pygments installed.
-#                              sudo easy_install -U Pygments
-#                              sudo apt-get install python-pygments
-alias c='pygmentize -O style=monokai -f console256 -g'
-
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
-
-# Update installed npm packages and Ruby gems
-alias update='sudo npm update -g; sudo gem update'
 
 # IP addresses
 alias ipexternal="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -42,13 +35,6 @@ alias iplocal="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{
 
 # URL-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
-
-# SSH tunnel
-alias tunnel='sshuttle --daemon --pidfile=/tmp/sshuttle.pid --remote vps --dns 0/0'
-alias tunnelstop='[[ -f /tmp/sshuttle.pid ]] && kill `cat /tmp/sshuttle.pid`'
-
-# Reload the shell (i.e. invoke as a login shell)
-alias reload="exec $SHELL -l"
 
 # Checks the current Node.js project's dependencies for known security issues
 alias nodesecurity="npm shrinkwrap && curl -X POST https://nodesecurity.io/validate/shrinkwrap -d @npm-shrinkwrap.json -H 'content-type: application/json'"
@@ -80,12 +66,3 @@ function gitfetchpr() {
     local localBranch="${2:-$1}"
     git fetch origin pull/$1/head:$localBranch
 }
-
-# Ignore changes on a tracked file
-alias gitignore="git update-index --assume-unchanged"
-
-# Stop ignoring changes on a tracked file
-alias gitunignore="git update-index --no-assume-unchanged"
-
-# List tracked files set to ignore changes
-alias gitignored="git ls-files -v | grep '^[a-z]'"

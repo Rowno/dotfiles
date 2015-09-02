@@ -71,3 +71,4 @@ autoload -Uz promptinit && promptinit
 prompt pure
 
 source ~/.dotfiles/aliases.sh
+source ~/.dotfiles/functions.sh
