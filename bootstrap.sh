@@ -1,13 +1,17 @@
 #!/usr/bin/env bash
 
-#chsh -s /bin/zsh
+if [[ $SHELL != '/bin/zsh' ]]; then
+    echo "● Switching shell to zsh"
+    chsh -s /bin/zsh
+fi
+
 echo "● Checking for updates"
 git pull
 git submodule update --init --recursive --quiet
 echo
 
 echo "● Copying dotfiles"
-rsync -aih --no-perms --exclude ".DS_Store" public/ ~
+rsync -aih --no-perms --exclude ".DS_Store" public/ ~ | cut -c 11-
 echo
 
 echo "● Adding private config to dotfiles"
