@@ -48,17 +48,15 @@ alias gits="git status"
 # git root
 alias gitr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
+# Push the current branch to origin and track it
+alias gitpush='git push -u origin $(git branch | grep "\*" | cut -c 3-)'
+
 # Delete all merged branches locally and remotely
 function gitprune() {
-    local branches=$(git branch --merged | grep -v "\*")
+    local branches
+    branches=$(git branch --merged | grep -v "\*")
     echo $branches | xargs -n 1 git branch --delete
     echo $branches | xargs -n 1 git push --delete origin
-}
-
-# Push the current branch to origin and track it
-function gitpush() {
-    local branch=$(git branch | grep "\*" | cut -c 3-)
-    git push -u origin $branch
 }
 
 # Fetch a pull request to a local branch
