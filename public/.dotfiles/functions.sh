@@ -31,12 +31,13 @@ function calc() {
     else
         printf "$result"
     fi
-    printf "\n"
 }
 
 # Converts px to rem
 function rem() {
-    calc "$1/16"
+    local result=$(calc "$1/16")
+    printf $result
+    printf $result | pbcopy 2> /dev/null
 }
 
 # Create a new directory and enter it
