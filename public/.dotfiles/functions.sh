@@ -31,6 +31,11 @@ function calc() {
     printf "\n"
 }
 
+# Converts px to rem
+function rem() {
+    calc "$1/16"
+}
+
 # Create a new directory and enter it
 function mkd() {
     mkdir -p "$@" && cd "$_";
