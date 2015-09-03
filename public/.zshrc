@@ -1,3 +1,6 @@
+# Exports
+# =======
+
 export EDITOR="nano"
 export VISUAL=$EDITOR
 bindkey -e
@@ -14,6 +17,9 @@ export LESS_TERMCAP_md=$'\E[1;33m'
 export GREP_OPTIONS="--color=auto"
 
 
+# Paths
+# =====
+
 typeset -U path
 typeset -U manpath
 typeset -UT NODE_PATH nodepath
@@ -28,6 +34,9 @@ manpath=("$NPM_CONFIG_PREFIX/share/man" $manpath)
 nodepath=("$NPM_CONFIG_PREFIX/lib/node_modules" $nodepath)
 
 
+# Autocomplete
+# ============
+
 autoload -Uz compinit
 compinit
 # Extra completions from brew zsh-completions
@@ -37,6 +46,9 @@ which grunt &> /dev/null && eval "$(grunt --completion=zsh)"
 # Autocomplete gulp commands
 which gulp &> /dev/null && eval "$(gulp --completion=zsh)"
 
+
+# Zsh options
+# ===========
 
 # Enables the delete key (reverse backspace)
 bindkey '^[[3~' delete-char
@@ -64,6 +76,9 @@ setopt hist_verify
 # Share history between parallel sessions
 setopt share_history
 
+
+# External files
+# ==============
 
 source ~/.dotfiles/vendor/z/z.sh
 autoload -Uz promptinit && promptinit
