@@ -38,9 +38,8 @@ which grunt &> /dev/null && eval "$(grunt --completion=zsh)"
 which gulp &> /dev/null && eval "$(gulp --completion=zsh)"
 
 
-# Search history for partially entered command using up and down keys
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
+# Enables the delete key (reverse backspace)
+bindkey '^[[3~' delete-char
 
 # cd by 'executing' a directory
 setopt auto_cd
