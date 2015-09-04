@@ -1,7 +1,7 @@
 Dotfiles
 ========
 
-My custom terminal config, aliases, functions.
+My custom terminal config, aliases and functions.
 
 
 Prerequisites
