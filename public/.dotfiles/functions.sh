@@ -36,6 +36,7 @@ function calc() {
 # Converts px to rem
 function rem() {
     local result=$(calc "$1/16")
+    result="${result}rem"
     printf $result
     printf $result | pbcopy 2> /dev/null
 }
