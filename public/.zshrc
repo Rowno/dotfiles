@@ -39,6 +39,8 @@ nodepath=("$NPM_CONFIG_PREFIX/lib/node_modules" $nodepath)
 
 autoload -Uz compinit
 compinit
+# Case insensitive autocomplete
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 # Extra completions from brew zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 # Autocomplete grunt commands
