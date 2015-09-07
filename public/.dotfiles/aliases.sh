@@ -42,6 +42,8 @@ alias nodesecurity="npm shrinkwrap && curl -X POST https://nodesecurity.io/valid
 alias gitd="git diff --ignore-space-change"
 alias gitds="git diff --ignore-space-change --staged"
 alias gita="git add"
+alias gitk="git checkout"
+alias gitc="git commit"
 alias gitl="git log --oneline --decorate"
 alias gits="git status"
 
