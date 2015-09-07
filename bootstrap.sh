@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 if [[ $SHELL != '/bin/zsh' ]]; then
     echo "● Switching shell to zsh"
@@ -22,6 +22,10 @@ for file in $(find private -type f -exec ls {} \; 2> /dev/null | sed 's/private\
     fi
 done
 unset file
+echo
+
+echo "● Reloading shell"
+source ~/.zshrc
 echo
 
 echo "● Done"
