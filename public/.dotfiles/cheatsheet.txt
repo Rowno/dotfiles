@@ -9,11 +9,11 @@ dnsrecords      - Get all the DNS records.
 extract         - Extract archives - use: extract <file>.
 fs              - Determine size of a file or total size of a directory.
 gita            - git add
-gitc            - git commit
+gitco           - git commit
 gitd            - git diff --ignore-space-change
 gitds           - git diff --ignore-space-change --staged
 gitfetchpr      - Fetch a pull request to a local branch.
-gitk            - git checkout
+gitch           - git checkout
 gitl            - git log --oneline --decorate
 gitprune        - Delete all merged branches locally and remotely.
 gitpush         - Push the current branch to origin and track it.
