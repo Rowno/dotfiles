@@ -41,7 +41,8 @@ autoload -Uz compinit
 compinit
 # Case insensitive autocomplete
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-# Extra completions from brew zsh-completions
+# Completions from homebrew
+fpath=(/usr/local/share/zsh/site-functions $fpath)
 fpath=(/usr/local/share/zsh-completions $fpath)
 # Autocomplete grunt commands
 which grunt &> /dev/null && eval "$(grunt --completion=zsh)"
