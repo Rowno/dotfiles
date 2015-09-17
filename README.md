@@ -21,28 +21,32 @@ The `bootstrap.sh` script will copy all the files in the `public` and `private` 
 
 To update the dotfiles just run `./bootstrap.sh` and restart your terminal again.
 
-To install a bunch of handy Node based command line tools run `./npm.sh`.
-
 
 Overview of Files
 -----------------
 
+### Setup
+- `bootstrap.sh` - sets up the dotfiles in the home directory.
+- `npm.sh` - installs a bunch of handy Node based command line tools.
+- `osx.sh` - installs newer versions of software and some handy tools and changes some settings on OSX.
+
 ### Directories
-* `private/` - private config that is merged with the public dotfiles, explained below.
-* `public/` - the actual dotfiles that are placed in `~/`.
-* `public/.dotfiles/` - shell environment and third party libraries.
-* `public/.dotfiles/vendor/` - third party libraries.
-* `public/.dotfiles/zfunctions/` - additional zsh functions.
+- `private/` - private config that is merged with the public dotfiles, explained below.
+- `public/` - the actual dotfiles that are placed in `~/`.
+- `public/.dotfiles/` - shell environment and third party libraries.
+- `public/.dotfiles/vendor/` - third party libraries.
+- `public/.dotfiles/zfunctions/` - additional zsh functions.
 
 ###  Config
-* `.gitconfig`
-* `.ssh/config`
+- `.gitconfig`
+- `.ssh/config`
 
 ### Shell environment
-* `.zshrc`
-* `.dotfiles/aliases.sh`
-* `.dotfiles/functions.sh`
-* `bin/httpcompression`
+- `.zshrc`
+- `.dotfiles/aliases.sh`
+- `.dotfiles/functions.sh`
+- `bin/httpcompression`
+
 
 
 Private Config
