@@ -7,7 +7,6 @@ brew install ansible
 brew install git
 brew install htop-osx
 brew install node
-brew install openssh
 brew install zsh-completions
 
 defaults write -app 'sketch' ApplePersistence -bool no
