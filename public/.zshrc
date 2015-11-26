@@ -22,7 +22,6 @@ export GREP_OPTIONS="--color=auto"
 
 typeset -U path
 typeset -U manpath
-typeset -UT NODE_PATH nodepath
 fpath=("$HOME/.dotfiles/zfunctions" $fpath)
 path=("$HOME/bin" $path)
 
@@ -31,7 +30,6 @@ export NPM_CONFIG_PREFIX="$HOME/.npm-packages"
 export N_PREFIX=$NPM_CONFIG_PREFIX
 path=("$NPM_CONFIG_PREFIX/bin" $path)
 manpath=("$NPM_CONFIG_PREFIX/share/man" $manpath)
-nodepath=("$NPM_CONFIG_PREFIX/lib/node_modules" $nodepath)
 
 
 # Autocomplete
