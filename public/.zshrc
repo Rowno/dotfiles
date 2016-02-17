@@ -65,6 +65,8 @@ setopt local_options
 # Extended glob features
 # http://www.refining-linux.org/archives/37/ZSH-Gem-2-Extended-globbing-and-expansion/
 setopt extended_glob
+# Pass bad path matches to the command (fixes `git reset HEAD^` when extended_glob is enabled)
+setopt no_nomatch
 # Wait before executing an rm ending in * (as a warning)
 setopt rm_star_wait
 
