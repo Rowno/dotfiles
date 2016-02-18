@@ -24,8 +24,4 @@ done
 unset file
 echo
 
-echo "● Reloading shell"
-source ~/.zshrc
-echo
-
-echo "● Done"
+echo "● Done, don't forget to reload the terminal!"
