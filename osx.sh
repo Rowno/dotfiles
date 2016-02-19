@@ -10,5 +10,7 @@ brew install htop-osx
 brew install node
 brew install zsh-completions
 brew cask install vagrant
+brew cask install caskroom/fonts/font-hack
+brew cask install caskroom/fonts/font-roboto
 
 defaults write -app 'sketch' ApplePersistence -bool no
