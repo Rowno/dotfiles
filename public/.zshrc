@@ -83,9 +83,16 @@ setopt share_history
 # External files
 # ==============
 
+source ~/.dotfiles/aliases.sh
+source ~/.dotfiles/functions.sh
+
+
+# Vendor
+# ======
+
 source ~/.dotfiles/vendor/z/z.sh
+
 autoload -Uz promptinit && promptinit
 prompt pure
 
-source ~/.dotfiles/aliases.sh
-source ~/.dotfiles/functions.sh
+source ~/.dotfiles/vendor/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

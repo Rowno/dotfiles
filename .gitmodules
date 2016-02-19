@@ -4,3 +4,6 @@
 [submodule "public/.dotfiles/vendor/pure"]
 	path = public/.dotfiles/vendor/pure
 	url = https://github.com/sindresorhus/pure.git
+[submodule "public/.dotfiles/vendor/zsh-syntax-highlighting"]
+	path = public/.dotfiles/vendor/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
