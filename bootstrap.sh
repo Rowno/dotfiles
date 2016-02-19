@@ -24,4 +24,8 @@ done
 unset file
 echo
 
+echo "● Rebuild zcompdump"
+rm -f ~/.zcompdump; compinit
+echo
+
 echo "● Done, don't forget to reload the terminal!"
