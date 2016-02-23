@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# https://github.com/mathiasbynens/dotfiles/blob/ecf3e3731ab257444c99e6bf3f86f9615f087144/bin/httpcompression
+
 # DESCRIPTION:
 #
 #   Provides the content encoding the specified

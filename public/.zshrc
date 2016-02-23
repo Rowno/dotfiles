@@ -23,7 +23,7 @@ export GREP_OPTIONS="--color=auto"
 typeset -U path
 typeset -U manpath
 fpath=("$HOME/.dotfiles/zfunctions" $fpath)
-path=("$HOME/bin" $path)
+path=("$HOME/.dotfiles/bin" $path)
 
 # Install npm packages globally without sudo
 export NPM_CONFIG_PREFIX="$HOME/.npm-packages"
