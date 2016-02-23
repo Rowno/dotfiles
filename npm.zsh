@@ -9,6 +9,7 @@ npm install -g npm
 npm install -g @rowno/generator-node
 npm install -g david
 npm install -g dependency-check
+npm install -g diff-so-fancy
 npm install -g fkill-cli
 npm install -g grunt-cli
 npm install -g gulp

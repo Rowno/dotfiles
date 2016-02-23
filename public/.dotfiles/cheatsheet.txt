@@ -9,17 +9,18 @@ dataurl         - Create a data URL from a file.
 dnsrecords      - Get all the DNS records.
 extract         - Extract archives - use: extract <file>.
 fs              - Determine size of a file or total size of a directory.
-gita            - git add
-gitco           - git commit
-gitd            - git diff --ignore-space-change
-gitds           - git diff --ignore-space-change --staged
+gita            - `git add`
+gitco           - `git commit`
+gitd            - `git diff --ignore-space-change` with diff-so-fancy
+gitds           - `git diff --ignore-space-change --staged` with diff-so-fancy
 gitfetchpr      - Fetch a pull request to a local branch.
-gitch           - git checkout
-gitl            - git log --oneline --decorate
+gitch           - `git checkout`
+gitl            - `git log --oneline --decorate`
 gitprune        - Delete all merged branches locally and remotely.
 gitpush         - Push the current branch to origin and track it.
 gitr            - cd to the root git directory.
-gits            - git status
+gits            - `git status`
+gitsh           - `git show --ignore-space-change` with diff-so-fancy
 gz              - Compare original and gzipped file size.
 httpcompression - Provides the content encoding the specified resources are served with.
 ipexternal      - Get the internet IP address of the network.
