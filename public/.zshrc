@@ -82,8 +82,8 @@ setopt share_history
 # External files
 # ==============
 
-source ~/.dotfiles/aliases.sh
-source ~/.dotfiles/functions.sh
+source ~/.dotfiles/aliases.zsh
+source ~/.dotfiles/functions.zsh
 
 
 # Vendor

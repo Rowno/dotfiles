@@ -15,20 +15,20 @@ Zsh is required to run these dotfiles. It comes preinstalled on OSX and can be i
 Installation
 ------------
 
-To install the dotfiles clone the dotfiles repo, run `./bootstrap.sh` and restart your terminal.
+To install the dotfiles clone the dotfiles repo, run `./bootstrap.zsh` and restart your terminal.
 
-The `bootstrap.sh` script will copy all the files in the `public` and `private` directories to your home directory. Files in the `private` directory are also appended, see Private Config for more info.
+The `bootstrap.zsh` script will copy all the files in the `public` and `private` directories to your home directory. Files in the `private` directory are also appended, see Private Config for more info.
 
-To update the dotfiles just run `./bootstrap.sh` and restart your terminal again.
+To update the dotfiles just run `./bootstrap.zsh` and restart your terminal again.
 
 
 Overview of Files
 -----------------
 
 ### Setup
-- `bootstrap.sh` - sets up the dotfiles in the home directory.
-- `npm.sh` - installs a bunch of handy Node based command line tools.
-- `osx.sh` - installs newer versions of software and some handy tools and changes some settings on OSX.
+- `bootstrap.zsh` - sets up the dotfiles in the home directory.
+- `npm.zsh` - installs a bunch of handy Node based command line tools.
+- `osx.zsh` - installs newer versions of software and some handy tools and changes some settings on OSX.
 
 ### Directories
 - `private/` - private config that is merged with the public dotfiles, explained below.
@@ -43,9 +43,9 @@ Overview of Files
 
 ### Shell environment
 - `.zshrc`
-- `.dotfiles/aliases.sh`
-- `.dotfiles/functions.sh`
-- `bin/httpcompression`
+- `.dotfiles/aliases.zsh`
+- `.dotfiles/functions.zsh`
+- `.dotfiles/bin/httpcompression`
 
 
 
