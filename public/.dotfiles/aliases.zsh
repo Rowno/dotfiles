@@ -41,9 +41,6 @@ alias nodesecurity="npm shrinkwrap && curl -X POST https://nodesecurity.io/valid
 
 alias a="atom-beta"
 
-alias gitd="git diff --ignore-space-change --color $@ | diff-so-fancy"
-alias gitds="git diff --ignore-space-change --staged --color $@ | diff-so-fancy"
-alias gitsh="git show --ignore-space-change --color $@ | diff-so-fancy"
 alias gita="git add"
 alias gitch="git checkout"
 alias gitco="git commit"
@@ -55,6 +52,18 @@ alias gitr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdu
 
 # Push the current branch to origin and track it
 alias gitpush='git push -u origin $(git branch | grep "\*" | cut -c 3-)'
+
+function gitd() {
+    git diff --ignore-space-change --color $@ | diff-so-fancy | less --tabs=1,5 -RFX
+}
+
+function gitds() {
+    git diff --ignore-space-change --staged --color $@ | diff-so-fancy | less --tabs=1,5 -RFX
+}
+
+function gitsh() {
+    git show --ignore-space-change --color $@ | diff-so-fancy | less --tabs=1,5 -RFX
+}
 
 # Delete all merged branches locally and remotely
 function gitprune() {
