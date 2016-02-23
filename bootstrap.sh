@@ -25,7 +25,8 @@ unset file
 echo
 
 echo "● Rebuild zcompdump"
-rm -f ~/.zcompdump; compinit
+rm -f ~/.zcompdump
+autoload -Uz compinit && compinit
 echo
 
 echo "● Done, don't forget to reload the terminal!"
