@@ -13,7 +13,7 @@ npm install -g grunt-cli
 npm install -g gulp
 npm install -g is-online-cli
 npm install -g node-inspector
-npm install -g requiresafe
+npm install -g nsp
 npm install -g speed-test
 npm install -g tcpie
 npm install -g trash-cli
