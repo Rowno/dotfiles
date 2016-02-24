@@ -1,9 +1,7 @@
 #!/usr/bin/env zsh
 
 npm install -g n
-n 0.10
-n 0.12
-n latest
+n stable
 npm install -g npm
 
 npm install -g @rowno/generator-node
