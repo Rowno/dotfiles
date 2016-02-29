@@ -94,6 +94,8 @@ source ~/.dotfiles/vendor/z/z.sh
 autoload -Uz promptinit && promptinit
 prompt pure
 
+source ~/.dotfiles/vendor/iterm2-shell-integration.zsh
+
 source ~/.dotfiles/vendor/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # zsh-history-substring-search
