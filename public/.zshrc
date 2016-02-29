@@ -100,8 +100,8 @@ source ~/.dotfiles/vendor/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source ~/.dotfiles/vendor/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bg=green,fg=black'
-export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='bg=red,fg=black'
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bg=green,fg=black,bold'
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='bg=red,fg=black,bold'
 
 # bind UP and DOWN arrow keys
 zmodload zsh/terminfo
