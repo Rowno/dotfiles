@@ -8,7 +8,6 @@ brew install git
 brew install git-lfs
 brew install htop
 brew install node
-brew install zsh-completions
 brew cask install vagrant
 brew cask install caskroom/fonts/font-hack
 brew cask install caskroom/fonts/font-roboto

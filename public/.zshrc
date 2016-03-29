@@ -35,12 +35,14 @@ manpath=("$NPM_CONFIG_PREFIX/share/man" $manpath)
 # Autocomplete
 # ============
 
-autoload -Uz compinit && compinit
-# Case insensitive autocomplete
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 # Completions from homebrew
 fpath=(/usr/local/share/zsh/site-functions $fpath)
-fpath=(/usr/local/share/zsh-completions $fpath)
+fpath=("$HOME/.dotfiles/vendor/zsh-completions/src" $fpath)
+
+autoload -Uz compinit && compinit
+
+# Case insensitive autocomplete
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 # Autocomplete grunt commands
 which grunt &> /dev/null && eval "$(grunt --completion=zsh)"
 # Autocomplete gulp commands

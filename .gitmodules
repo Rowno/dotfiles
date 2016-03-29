@@ -10,3 +10,6 @@
 [submodule "public/.dotfiles/vendor/zsh-history-substring-search"]
 	path = public/.dotfiles/vendor/zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search.git
+[submodule "public/.dotfiles/vendor/zsh-completions"]
+	path = public/.dotfiles/vendor/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
