@@ -61,8 +61,6 @@ setopt auto_cd
 setopt correct
 # Allow completions in both directions
 setopt complete_in_word
-# Allow functions to have local options
-setopt local_options
 # Extended glob features
 # http://www.refining-linux.org/archives/37/ZSH-Gem-2-Extended-globbing-and-expansion/
 setopt extended_glob
