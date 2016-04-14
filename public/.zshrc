@@ -43,6 +43,8 @@ autoload -Uz compinit && compinit
 
 # Case insensitive autocomplete
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+# Pasting with tabs doesn't perform completion
+zstyle ':completion:*' insert-tab pending
 # Autocomplete grunt commands
 which grunt &> /dev/null && eval "$(grunt --completion=zsh)"
 # Autocomplete gulp commands
