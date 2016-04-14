@@ -14,6 +14,7 @@ brew cask install caskroom/fonts/font-hack
 brew cask install caskroom/fonts/font-roboto
 
 brew cask install 1password
+brew cask install arq
 brew cask install android-file-transfer
 brew cask install atom
 brew cask install caskroom/versions/atom-beta
