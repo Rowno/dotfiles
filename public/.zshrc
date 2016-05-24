@@ -96,7 +96,7 @@ source ~/.dotfiles/vendor/z/z.sh
 autoload -Uz promptinit && promptinit
 prompt pure
 
-source ~/.dotfiles/vendor/iterm2-shell-integration.zsh
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 source ~/.dotfiles/vendor/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
