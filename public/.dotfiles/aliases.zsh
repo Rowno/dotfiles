@@ -39,7 +39,7 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 # Checks the current Node.js project's dependencies for known security issues
 alias nodesecurity="npm shrinkwrap && curl -X POST https://nodesecurity.io/validate/shrinkwrap -d @npm-shrinkwrap.json -H 'content-type: application/json'"
 
-alias a="atom-beta"
+alias a="atom"
 
 alias gita="git add"
 alias gitch="git checkout"
