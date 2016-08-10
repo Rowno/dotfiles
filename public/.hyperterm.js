@@ -58,6 +58,8 @@ module.exports = {
   plugins: [
     'hyperterm-snazzy',
     'hypercwd',
+    'hypertitle',
+    'hyperterm-themed-scrollbar',
   ],
 
   // in development, you can create a directory under
