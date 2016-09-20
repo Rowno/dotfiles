@@ -56,10 +56,14 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyperterm-snazzy',
     'hypercwd',
-    'hypertitle',
+    'hyperterm-alternatescroll',
+    'hyperterm-cursor',
+    'hyperterm-paste',
+    'hyperterm-snazzy',
+    'hyperterm-tabs',
     'hyperterm-themed-scrollbar',
+    'hypertitle',
   ],
 
   // in development, you can create a directory under
