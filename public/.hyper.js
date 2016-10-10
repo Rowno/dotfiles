@@ -57,7 +57,7 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'hypercwd',
-    'hyperterm-alternatescroll',
+    // 'hyperterm-alternatescroll',
     'hyperterm-cursor',
     'hyperterm-paste',
     'hyperterm-snazzy',
