@@ -102,6 +102,10 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 source ~/.dotfiles/vendor/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Autoload ssh key passphrases from the keychain
+ssh-add -A 2>/dev/null
+
+
 # zsh-history-substring-search
 
 source ~/.dotfiles/vendor/zsh-history-substring-search/zsh-history-substring-search.zsh
