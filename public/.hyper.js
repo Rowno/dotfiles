@@ -56,12 +56,11 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
+    'hyper-snazzy',
     'hypercwd',
     // 'hyperterm-alternatescroll',
     'hyperterm-cursor',
     'hyperterm-paste',
-    'hyperterm-snazzy',
-    'hyperterm-tabs',
     'hyperterm-themed-scrollbar',
     'hypertitle',
   ],
