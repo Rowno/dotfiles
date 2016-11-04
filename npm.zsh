@@ -20,4 +20,5 @@ npm install -g speed-test
 npm install -g tcpie
 npm install -g to-ico-cli
 npm install -g trash-cli
+npm install -g yarn
 npm install -g yo
