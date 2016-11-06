@@ -27,10 +27,11 @@ brew cask install caskroom/fonts/font-roboto
 # brew cask install gitup
 # brew cask install google-chrome
 # brew cask install google-drive
+# brew cask install hyper
 # brew cask install imagealpha
 # brew cask install imageoptim
 # brew cask install istat-menus
-# brew cask install iterm2
+# brew cask install kap
 # brew cask install logitech-options
 # brew cask install moom
 # brew cask install radio-silence
