@@ -11,7 +11,6 @@ brew install keybase
 brew install node
 brew install homebrew/dupes/less # Latest less supports emoji!
 brew cask install ngrok
-brew cask install vagrant
 brew cask install caskroom/fonts/font-hack
 brew cask install caskroom/fonts/font-roboto
 
@@ -24,7 +23,6 @@ brew cask install caskroom/fonts/font-roboto
 # brew cask install dropbox
 # brew cask install firefox
 # brew cask install flux
-# brew cask install gitup
 # brew cask install google-chrome
 # brew cask install google-drive
 # brew cask install hyper
@@ -38,7 +36,6 @@ brew cask install caskroom/fonts/font-roboto
 # brew cask install sketch
 # brew cask install steam
 # brew cask install tunnelblick
-# brew cask install virtualbox
 # brew cask install vlc
 
 defaults write -app 'sketch' ApplePersistence -bool no
