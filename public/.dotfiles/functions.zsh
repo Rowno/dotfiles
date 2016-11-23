@@ -159,3 +159,17 @@ function dataurl() {
 function npmls() {
     npm ls --depth=0 "$@" 2>/dev/null
 }
+
+docker-cleanup() {
+  # delete exited containers
+  docker rm -v $(docker ps -a -q -f "status=exited")
+
+  # remove "dangling" images
+  docker rmi $(docker images -q -f "dangling=true")
+
+  # cleanup vfs directory
+  docker run \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v /var/lib/docker:/var/lib/docker \
+    --rm martin/docker-cleanup-volumes
+}
