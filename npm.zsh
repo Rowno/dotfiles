@@ -6,7 +6,7 @@ npm install -g npm
 
 npm install -g @rowno/generator-node
 npm install -g david
-npm install -g dependency-check
+npm install -g depcheck
 npm install -g diff-so-fancy
 npm install -g emoj
 npm install -g fkill-cli
