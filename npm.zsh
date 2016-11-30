@@ -16,6 +16,7 @@ npm install -g is-online-cli
 npm install -g node-inspector
 npm install -g now
 npm install -g nsp
+npm install -g source-map-explorer
 npm install -g speed-test
 npm install -g tcpie
 npm install -g to-ico-cli
