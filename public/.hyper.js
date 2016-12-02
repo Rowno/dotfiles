@@ -62,7 +62,6 @@ module.exports = {
     'hyperterm-cursor',
     'hyperterm-paste',
     'hyperterm-themed-scrollbar',
-    'hypertitle',
   ],
 
   // in development, you can create a directory under
