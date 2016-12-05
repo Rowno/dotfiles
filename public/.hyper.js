@@ -58,7 +58,7 @@ module.exports = {
   plugins: [
     'hyper-snazzy',
     'hypercwd',
-    // 'hyperterm-alternatescroll',
+    'hyperterm-alternatescroll',
     'hyperterm-cursor',
     'hyperterm-paste',
     'hyperterm-themed-scrollbar',
