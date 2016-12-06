@@ -46,6 +46,8 @@ alias gitch="git checkout"
 alias gitco="git commit"
 alias gitl="git log --oneline --decorate"
 alias gits="git status"
+alias gitbd="git branch -d"
+alias gitm="git merge --no-edit"
 
 # git root
 alias gitr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
