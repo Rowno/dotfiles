@@ -9,6 +9,7 @@ brew install gnupg
 brew install htop
 brew install keybase
 brew install node
+brew install yarn
 brew install homebrew/dupes/less # Latest less supports emoji!
 brew cask install ngrok
 brew cask install caskroom/fonts/font-hack
