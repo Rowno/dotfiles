@@ -33,6 +33,7 @@ brew cask install caskroom/fonts/font-roboto
 # brew cask install kap
 # brew cask install logitech-options
 # brew cask install moom
+# brew cask install postico
 # brew cask install radio-silence
 # brew cask install sketch
 # brew cask install steam
