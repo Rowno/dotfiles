@@ -1,36 +1,36 @@
 [apply]
-    # Detect whitespace errors when applying a patch
-    whitespace = fix
+  # Detect whitespace errors when applying a patch
+  whitespace = fix
 
 [core]
-    # Treat spaces before tabs and all kinds of trailing whitespace as an error
-    whitespace = space-before-tab,trailing-space
-    # Edit commit messages in Sublime Text
-    editor = atom --wait
-    excludesfile = ~/.dotfiles/gitignore-global
-    # Make `git rebase` safer on OS X
-    # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
-    trustctime = false
+  # Treat spaces before tabs and all kinds of trailing whitespace as an error
+  whitespace = space-before-tab,trailing-space
+  # Edit commit messages in Sublime Text
+  editor = atom --wait
+  excludesfile = ~/.dotfiles/gitignore-global
+  # Make `git rebase` safer on OS X
+  # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+  trustctime = false
 
 [color]
-    # Use colors in Git commands that are capable of colored output when outputting to the terminal
-    ui = auto
+  # Use colors in Git commands that are capable of colored output when outputting to the terminal
+  ui = auto
 
 [merge]
-    # Include summaries of merged commits in newly created merge commit messages
-    log = true
+  # Include summaries of merged commits in newly created merge commit messages
+  log = true
 
 [push]
-    default = simple
-    followTags = true
+  default = simple
+  followTags = true
 
 [help]
-    autocorrect = 1
+  autocorrect = 1
 
 [filter "lfs"]
-    clean = git-lfs clean %f
-    smudge = git-lfs smudge %f
-    required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
 
 [commit]
-    gpgsign = true
+  gpgsign = true

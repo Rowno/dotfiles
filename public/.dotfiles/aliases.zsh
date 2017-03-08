@@ -9,9 +9,9 @@ alias -- -="cd -"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
-    colorflag="--color"
+  colorflag="--color"
 else # OS X `ls`
-    colorflag="-G"
+  colorflag="-G"
 fi
 
 # ls options: Use color even with piping to awk, F = put `/` after folders, h = byte unit suffixes, color
@@ -56,27 +56,27 @@ alias gitr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdu
 alias gitpush='git push -u origin $(git branch | grep "\*" | cut -c 3-)'
 
 function gitd() {
-    git diff --ignore-space-change --color $@ | diff-so-fancy | less --tabs=1,5 -RFXS
+  git diff --ignore-space-change --color $@ | diff-so-fancy | less --tabs=1,5 -RFXS
 }
 
 function gitds() {
-    git diff --ignore-space-change --staged --color $@ | diff-so-fancy | less --tabs=1,5 -RFXS
+  git diff --ignore-space-change --staged --color $@ | diff-so-fancy | less --tabs=1,5 -RFXS
 }
 
 function gitsh() {
-    git show --ignore-space-change --color $@ | diff-so-fancy | less --tabs=1,5 -RFXS
+  git show --ignore-space-change --color $@ | diff-so-fancy | less --tabs=1,5 -RFXS
 }
 
 # Delete all merged branches locally and remotely
 function gitprune() {
-    local branches
-    branches=$(git branch --merged | grep -v "\*")
-    echo $branches | xargs -n 1 git branch --delete
-    echo $branches | xargs -n 1 git push --delete origin
+  local branches
+  branches=$(git branch --merged | grep -v "\*")
+  echo $branches | xargs -n 1 git branch --delete
+  echo $branches | xargs -n 1 git push --delete origin
 }
 
 # Fetch a pull request to a local branch
 function gitfetchpr() {
-    local localBranch="${2:-$1}"
-    git fetch origin pull/$1/head:$localBranch
+  local localBranch="${2:-$1}"
+  git fetch origin pull/$1/head:$localBranch
 }

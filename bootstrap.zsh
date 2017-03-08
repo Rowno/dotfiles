@@ -1,8 +1,8 @@
 #!/usr/bin/env zsh
 
 if [[ $SHELL != '/bin/zsh' ]]; then
-    echo "● Switching shell to zsh"
-    chsh -s /bin/zsh
+  echo "● Switching shell to zsh"
+  chsh -s /bin/zsh
 fi
 
 echo "● Checking for updates"
@@ -16,10 +16,10 @@ echo
 
 echo "● Adding private config to dotfiles"
 for file in $(find private -type f -exec ls {} \; 2> /dev/null | sed 's/private\///'); do
-    if [[ $file != '.gitignore' ]] && [[ $file != '.DS_Store' ]]; then
-        echo $file
-        cat ./private/$file >> ~/$file
-    fi
+  if [[ $file != '.gitignore' ]] && [[ $file != '.DS_Store' ]]; then
+    echo $file
+    cat ./private/$file >> ~/$file
+  fi
 done
 unset file
 echo
