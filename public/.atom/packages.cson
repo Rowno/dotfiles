@@ -16,7 +16,6 @@ packages: [
   "linter-xo"
   "merge-conflicts"
   "minimap"
-  "node_modules"
   "package-sync"
   "pigments"
   "regex-railroad-diagram-fork"
