@@ -26,6 +26,7 @@ brew cask install caskroom/fonts/font-roboto
 # brew cask install flux
 # brew cask install google-chrome
 # brew cask install google-drive
+# brew cask install gpgtools
 # brew cask install hyper
 # brew cask install imagealpha
 # brew cask install imageoptim
