@@ -41,6 +41,8 @@ alias nodesecurity="npm shrinkwrap && curl -X POST https://nodesecurity.io/valid
 
 alias a="atom"
 
+alias dc="docker-compose"
+
 alias gita="git add"
 alias gitch="git checkout"
 alias gitco="git commit"

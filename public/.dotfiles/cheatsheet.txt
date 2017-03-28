@@ -2,10 +2,11 @@
 ...             - ../..
 ....            - ../../..
 .....           - ../../../..
-a               - Atom Beta.
+a               - Atom.
 calc            - Simple calculator.
 codepoint       - Get a character’s Unicode code point.
 dataurl         - Create a data URL from a file.
+dc              - docker-compose.
 dnsrecords      - Get all the DNS records.
 extract         - Extract archives - use: extract <file>.
 fs              - Determine size of a file or total size of a directory.
