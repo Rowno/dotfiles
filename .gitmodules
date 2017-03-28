@@ -13,3 +13,6 @@
 [submodule "public/.dotfiles/vendor/zsh-completions"]
 	path = public/.dotfiles/vendor/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
+[submodule "public/.dotfiles/vendor/zsh-autosuggestions"]
+	path = public/.dotfiles/vendor/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
