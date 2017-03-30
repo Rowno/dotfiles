@@ -103,6 +103,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 source ~/.dotfiles/vendor/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source ~/.dotfiles/vendor/zsh-autosuggestions/zsh-autosuggestions.zsh
+export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
 # Autoload ssh key passphrases from the keychain
 ssh-add -A 2>/dev/null
@@ -111,7 +112,6 @@ ssh-add -A 2>/dev/null
 # zsh-history-substring-search
 
 source ~/.dotfiles/vendor/zsh-history-substring-search/zsh-history-substring-search.zsh
-
 export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bg=green,fg=black,bold'
 export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='bg=red,fg=black,bold'
 
