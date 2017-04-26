@@ -14,6 +14,9 @@ else # OS X `ls`
   colorflag="-G"
 fi
 
+# Always enable colored `grep` output
+alias grep='grep --color=auto'
+
 # ls options: Use color even with piping to awk, F = put `/` after folders, h = byte unit suffixes, color
 alias ls='CLICOLOR_FORCE=1 ls -Fh ${colorflag}'
 

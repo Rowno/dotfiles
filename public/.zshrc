@@ -15,8 +15,6 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 export MANPAGER="less -X"
 # Highlight section titles in manual pages
 export LESS_TERMCAP_md=$'\E[1;33m'
-# Always enable colored `grep` output
-export GREP_OPTIONS="--color=auto"
 
 
 # Paths
