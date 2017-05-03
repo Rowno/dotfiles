@@ -11,6 +11,7 @@ packages: [
   "js-hyperclick"
   "language-babel"
   "language-docker"
+  "language-graphql"
   "language-postcss"
   "linter-eslint"
   "linter-js-standard"
