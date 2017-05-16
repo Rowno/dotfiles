@@ -61,15 +61,15 @@ alias gitr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdu
 alias gitpush='git push -u origin $(git branch | grep "\*" | cut -c 3-)'
 
 function gitd() {
-  git diff --ignore-space-change --color $@ | diff-so-fancy | less --tabs=1,5 -RFXS
+  git diff --ignore-space-change --color $@ | diff-so-fancy | less --tabs=2 --RAW-CONTROL-CHARS --quit-if-one-screen --no-init --chop-long-lines
 }
 
 function gitds() {
-  git diff --ignore-space-change --staged --color $@ | diff-so-fancy | less --tabs=1,5 -RFXS
+  git diff --ignore-space-change --staged --color $@ | diff-so-fancy | less --tabs=2 --RAW-CONTROL-CHARS --quit-if-one-screen --no-init --chop-long-lines
 }
 
 function gitsh() {
-  git show --ignore-space-change --color $@ | diff-so-fancy | less --tabs=1,5 -RFXS
+  git show --ignore-space-change --color $@ | diff-so-fancy | less --tabs=2 --RAW-CONTROL-CHARS --quit-if-one-screen --no-init --chop-long-lines
 }
 
 # Delete all merged branches locally and remotely
