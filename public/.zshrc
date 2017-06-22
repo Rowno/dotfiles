@@ -77,8 +77,6 @@ setopt hist_ignore_all_dups
 setopt hist_reduce_blanks
 # Don't execute history expansion automatically
 setopt hist_verify
-# Share history between parallel sessions
-setopt share_history
 
 
 # External files
