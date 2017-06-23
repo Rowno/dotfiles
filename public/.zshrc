@@ -25,12 +25,6 @@ typeset -U manpath
 fpath=("$HOME/.dotfiles/zfunctions" $fpath)
 path=("$HOME/.dotfiles/bin" $path)
 
-# Install npm packages globally without sudo
-export NPM_CONFIG_PREFIX="$HOME/.npm-packages"
-export N_PREFIX=$NPM_CONFIG_PREFIX
-path=("$NPM_CONFIG_PREFIX/bin" $path)
-manpath=("$NPM_CONFIG_PREFIX/share/man" $manpath)
-
 
 # Autocomplete
 # ============
@@ -89,17 +83,22 @@ source ~/.dotfiles/functions.zsh
 # Vendor
 # ======
 
-source ~/.dotfiles/vendor/z/z.sh
-
 autoload -Uz promptinit && promptinit
 prompt pure
+
+export NVM_DIR=$HOME/.dotfiles/nvm
+# export NVM_LAZY_LOAD=true
+export NVM_AUTO_USE=true
+source ~/.dotfiles/vendor/zsh-nvm/zsh-nvm.plugin.zsh
+
+source ~/.dotfiles/vendor/z/z.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 source ~/.dotfiles/vendor/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-source ~/.dotfiles/vendor/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+source ~/.dotfiles/vendor/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Autoload ssh key passphrases from the keychain
 ssh-add -A 2>/dev/null
@@ -107,9 +106,9 @@ ssh-add -A 2>/dev/null
 
 # zsh-history-substring-search
 
-source ~/.dotfiles/vendor/zsh-history-substring-search/zsh-history-substring-search.zsh
 export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bg=green,fg=black,bold'
 export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='bg=red,fg=black,bold'
+source ~/.dotfiles/vendor/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # bind UP and DOWN arrow keys
 zmodload zsh/terminfo

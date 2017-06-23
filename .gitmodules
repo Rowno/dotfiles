@@ -16,3 +16,6 @@
 [submodule "public/.dotfiles/vendor/zsh-autosuggestions"]
 	path = public/.dotfiles/vendor/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "public/.dotfiles/vendor/zsh-nvm"]
+	path = public/.dotfiles/vendor/zsh-nvm
+	url = https://github.com/lukechilds/zsh-nvm.git
