@@ -13,6 +13,7 @@ npm install -g grunt-cli
 npm install -g gulp-cli
 npm install -g is-online-cli
 npm install -g now
+npm install -g np
 npm install -g nsp
 npm install -g source-map-explorer
 npm install -g speed-test
