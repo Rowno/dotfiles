@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 npm config set sign-git-tag true
-yarn config set version-git-sign true
+yarn config set version-sign-git-tag true
 
 npm install -g npm
 npm install -g @rowno/generator-node
