@@ -97,9 +97,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 source ~/.dotfiles/vendor/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
-source ~/.dotfiles/vendor/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 # Autoload ssh key passphrases from the keychain
 ssh-add -A 2>/dev/null
 
