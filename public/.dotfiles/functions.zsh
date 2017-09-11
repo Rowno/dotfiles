@@ -161,15 +161,12 @@ function npmls() {
 }
 
 docker-cleanup() {
-  # delete exited containers
-  docker rm -v $(docker ps -a -q -f "status=exited")
+  # remove all unused (containers, images, networks and volumes)
+  docker system prune -f
 
-  # remove "dangling" images
-  docker rmi $(docker images -q -f "dangling=true")
+  # remove dangling images
+  docker rmi $(docker images -f dangling=true -q)
 
-  # cleanup vfs directory
-  docker run \
-    -v /var/run/docker.sock:/var/run/docker.sock \
-    -v /var/lib/docker:/var/lib/docker \
-    --rm martin/docker-cleanup-volumes
+  # remove dangling volumes
+  docker volume rm $(docker volume ls -f dangling=true -q)
 }
