@@ -14,6 +14,7 @@ brew cask install keybase
 brew cask install ngrok
 brew cask install caskroom/fonts/font-hack
 brew cask install caskroom/fonts/font-roboto
+brew cask install insomnia
 
 # brew cask install 1password
 # brew cask install android-file-transfer
