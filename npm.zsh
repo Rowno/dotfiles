@@ -15,7 +15,6 @@ npm install -g is-online-cli
 npm install -g now
 npm install -g np
 npm install -g nsp
-npm install -g release
 npm install -g source-map-explorer
 npm install -g speed-test
 npm install -g tcpie
