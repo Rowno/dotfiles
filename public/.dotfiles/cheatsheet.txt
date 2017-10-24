@@ -33,6 +33,7 @@ mkd             - Create a new directory and enter it.
 nodesecurity    - Checks the current Node.js project's dependencies for known security issues.
 npmls           - `npm ls` without all the dependency fluff.
 o               - Opens the current directory, otherwise opens the given file, directory or URL.
+open-ports      - Lists all processes with open ports matching the given regex.
 rem             - Converts px to rem.
 server          - Start an HTTP server from a directory, optionally specifying the port.
 unidecode       - Decode \x{ABCD}-style Unicode escape sequences.

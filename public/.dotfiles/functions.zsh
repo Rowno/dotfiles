@@ -160,7 +160,7 @@ function npmls() {
   npm ls --depth=0 "$@" 2>/dev/null
 }
 
-docker-cleanup() {
+function docker-cleanup() {
   # remove all unused (containers, images, networks and volumes)
   docker system prune -f
 

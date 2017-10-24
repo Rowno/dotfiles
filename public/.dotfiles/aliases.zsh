@@ -46,6 +46,9 @@ alias a="atom"
 
 alias dc="docker-compose"
 
+# Lists all processes with open ports matching the given regex
+alias open-ports='lsof -Pn -i4 -i6 | grep LISTEN | grep'
+
 alias gita="git add"
 alias gitch="git checkout"
 alias gitco="git commit"
