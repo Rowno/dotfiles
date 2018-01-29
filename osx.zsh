@@ -6,7 +6,6 @@ brew update
 brew install ansible
 brew install git
 brew install gnupg
-brew install htop
 brew install micro
 brew install node
 brew install yarn
