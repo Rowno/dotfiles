@@ -2,7 +2,7 @@
 ...             - ../..
 ....            - ../../..
 .....           - ../../../..
-a               - Atom.
+c               - VS Code.
 calc            - Simple calculator.
 codepoint       - Get a character’s Unicode code point.
 dataurl         - Create a data URL from a file.

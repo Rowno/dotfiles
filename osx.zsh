@@ -17,7 +17,6 @@ brew cask install caskroom/fonts/font-roboto
 # brew cask install 1password
 # brew cask install android-file-transfer
 # brew cask install arq
-# brew cask install atom
 # brew cask install daisydisk
 # brew cask install dropbox
 # brew cask install firefox
@@ -39,6 +38,7 @@ brew cask install caskroom/fonts/font-roboto
 # brew cask install sketch
 # brew cask install steam
 # brew cask install tunnelblick
+# brew cask install visual-studio-code
 # brew cask install vlc
 
 defaults write -app 'sketch' ApplePersistence -bool no
