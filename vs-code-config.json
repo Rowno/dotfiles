@@ -1,0 +1,61 @@
+{
+  "editor.fontFamily": "Hack",
+  "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "editor.renderWhitespace": "none",
+  "editor.multiCursorModifier": "alt",
+  "editor.formatOnSave": true,
+  "telemetry.enableTelemetry": false,
+  "gitlens.advanced.messages": {
+      "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.historyExplorer.enabled": false,
+  "gitlens.mode.active": "zen",
+  "gitlens.mode.statusBar.enabled": false,
+  "prettier.requireConfig": true,
+  "xo.enable": true,
+  "eslint.autoFixOnSave": true,
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorCustomizations": {
+      // "terminal.background": "#282a36",
+      "terminalCursor.background": "#282a36",
+      "terminalCursor.foreground": "#97979b",
+      "terminal.selectionBackground": "#97979b33",
+      "terminal.foreground": "#eff0eb",
+      "terminal.ansiBlack": "#282a36",
+      "terminal.ansiRed": "#ff5c57",
+      "terminal.ansiGreen": "#5af78e",
+      "terminal.ansiYellow": "#f3f99d",
+      "terminal.ansiBlue": "#57c7ff",
+      "terminal.ansiMagenta": "#ff6ac1",
+      "terminal.ansiCyan": "#9aedfe",
+      "terminal.ansiWhite": "#f1f1f0",
+      "terminal.ansiBrightBlack": "#686868",
+      "terminal.ansiBrightRed": "#ff5c57",
+      "terminal.ansiBrightGreen": "#5af78e",
+      "terminal.ansiBrightYellow": "#f3f99d",
+      "terminal.ansiBrightBlue": "#57c7ff",
+      "terminal.ansiBrightMagenta": "#ff6ac1",
+      "terminal.ansiBrightCyan": "#9aedfe",
+      "terminal.ansiBrightWhite": "#eff0eb"
+  },
+  "zenMode.fullScreen": false,
+  "openInGitHub.requireSelectionForLines": true,
+  "explorer.confirmDelete": false,
+  "javascript.validate.enable": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "editor.rulers": [
+      80
+  ],
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.syntaxProfiles": {
+      "javascript": "jsx"
+  },
+  "breadcrumbs.enabled": true,
+  "standard.autoFixOnSave": true,
+  "standard.usePackageJson": true
+}

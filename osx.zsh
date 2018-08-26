@@ -3,7 +3,6 @@
 # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # brew doctor
 brew update
-brew install ansible
 brew install git
 brew install gnupg
 brew install micro
@@ -15,7 +14,6 @@ brew cask install caskroom/fonts/font-hack
 brew cask install caskroom/fonts/font-roboto
 
 # brew cask install 1password
-# brew cask install android-file-transfer
 # brew cask install arq
 # brew cask install daisydisk
 # brew cask install dropbox
@@ -34,11 +32,8 @@ brew cask install caskroom/fonts/font-roboto
 # brew cask install logitech-options
 # brew cask install moom
 # brew cask install postico
-# brew cask install radio-silence
 # brew cask install sketch
 # brew cask install steam
-# brew cask install tunnelblick
 # brew cask install visual-studio-code
-# brew cask install vlc
 
 defaults write -app 'sketch' ApplePersistence -bool no
