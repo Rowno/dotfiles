@@ -16,6 +16,20 @@
   # Use colors in Git commands that are capable of colored output when outputting to the terminal
   ui = auto
 
+# Better diff colors
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+[color "diff"]
+  meta = yellow
+  frag = magenta bold
+  commit = yellow bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+
 [merge]
   # Include summaries of merged commits in newly created merge commit messages
   log = true
