@@ -101,6 +101,8 @@ source ~/.dotfiles/vendor/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Autoload ssh key passphrases from the keychain
 ssh-add -A 2>/dev/null
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 
 # zsh-history-substring-search
 
