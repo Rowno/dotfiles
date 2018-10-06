@@ -5,6 +5,7 @@
 brew update
 brew install bat
 brew install fzf
+$(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc --no-bash --no-fish
 brew install git
 brew install gnupg
 brew install micro
