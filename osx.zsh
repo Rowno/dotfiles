@@ -11,6 +11,7 @@ brew install gnupg
 brew install micro
 brew install node
 brew install yarn
+brew cask install aerial
 brew cask install keybase
 brew cask install ngrok
 brew cask install caskroom/fonts/font-hack
