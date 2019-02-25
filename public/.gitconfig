@@ -50,4 +50,4 @@
   insteadOf = https://github.com/
 
 [log]
-  date = local
+  date = auto:human
