@@ -1,3 +1,0 @@
-# Enable Emmet in JSX
-'atom-text-editor[data-grammar~="jsx"]:not([mini])':
-  'tab': 'emmet:expand-abbreviation-with-tab'
