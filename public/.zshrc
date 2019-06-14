@@ -68,6 +68,8 @@ setopt rm_star_wait
 
 # Remove history duplicates
 setopt hist_ignore_all_dups
+# Don't add commands to history when they start with a space
+setopt hist_ignore_space
 # Trim whitespace from history lines
 setopt hist_reduce_blanks
 # Don't execute history expansion automatically
