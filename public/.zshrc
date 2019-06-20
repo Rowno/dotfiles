@@ -86,7 +86,8 @@ source ~/.dotfiles/functions.zsh
 # Vendor
 # ======
 
-autoload -Uz promptinit && promptinit
+autoload -U promptinit; promptinit
+zstyle :prompt:pure:prompt:success color green
 prompt pure
 
 export NVM_DIR=$HOME/.dotfiles/nvm
