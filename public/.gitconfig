@@ -11,6 +11,7 @@
   # Make `git rebase` safer on OS X
   # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
   trustctime = false
+  pager = less --tabs=2 --RAW-CONTROL-CHARS --quit-if-one-screen --no-init --chop-long-lines
 
 [color]
   # Use colors in Git commands that are capable of colored output when outputting to the terminal
