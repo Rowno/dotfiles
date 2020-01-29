@@ -52,7 +52,7 @@ alias open-ports='lsof -Pn -i4 -i6 | grep LISTEN | grep'
 alias gita="git add"
 alias gitch="git checkout"
 alias gitco="git commit"
-alias gitl="git log --oneline --decorate"
+alias gitl="git log --pretty=format:'%C(auto)%h  %<(16)%ad %d %s%C(reset)'"
 alias gits="git status"
 alias gitbd="git branch -d"
 alias gitm="git merge --no-edit"
