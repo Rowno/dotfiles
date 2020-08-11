@@ -28,6 +28,3 @@ echo "● Rebuilding zcompdump"
 rm -f ~/.zcompdump
 autoload -Uz compinit && compinit
 echo
-
-echo "● Reloading this terminal session"
-exec zsh
