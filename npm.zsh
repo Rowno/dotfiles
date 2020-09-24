@@ -11,7 +11,6 @@ npm install -g \
   emoj \
   fkill-cli \
   is-online-cli \
-  now \
   np \
   react-benchmark \
   serve \
