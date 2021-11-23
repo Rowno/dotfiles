@@ -8,11 +8,12 @@ brew install git
 brew install micro
 brew install node
 brew install yarn
-brew cask install aerial
-brew cask install keybase
-brew cask install ngrok
-brew cask install caskroom/fonts/font-hack
-brew cask install caskroom/fonts/font-roboto
+brew install aerial
+brew install keybase
+brew install ngrok
+brew install homebrew/cask-fonts/font-hack
+brew install homebrew/cask-fonts/font-roboto
+brew install ameshkov/tap/dnslookup
 
 # brew cask install 1password
 # brew cask install arq
@@ -27,9 +28,8 @@ brew cask install caskroom/fonts/font-roboto
 # brew cask install kap
 # brew cask install logitech-options
 # brew cask install moom
-# brew cask install postico
-# brew cask install sketch
 # brew cask install steam
+# brew cask install tableplus
 # brew cask install visual-studio-code
 
 defaults write -app 'sketch' ApplePersistence -bool no
