@@ -27,6 +27,7 @@ typeset -U manpath
 eval "$(/opt/homebrew/bin/brew shellenv)"
 fpath=("$HOME/.dotfiles/zfunctions" $fpath)
 path=("$HOME/.dotfiles/bin" $path)
+path=("$HOME/.deno/bin" $path)
 
 
 # Autocomplete
