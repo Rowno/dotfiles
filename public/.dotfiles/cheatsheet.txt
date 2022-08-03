@@ -18,7 +18,6 @@ gitfetchpr      - Fetch a pull request to a local branch.
 gitch           - `git checkout`
 gitl            - `git log --oneline --decorate`
 gitprune        - Delete all merged branches locally and remotely.
-gitpush         - Push the current branch to origin and track it.
 gitr            - cd to the root git directory.
 gits            - `git status`
 gitsh           - `git show --ignore-space-change` with diff-so-fancy
