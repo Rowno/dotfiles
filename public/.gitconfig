@@ -56,3 +56,6 @@
 
 [log]
   date = auto:human-local
+
+[init]
+  defaultBranch = main
