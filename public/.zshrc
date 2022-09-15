@@ -24,7 +24,7 @@ export LESS_TERMCAP_md=$'\E[1;33m'
 
 typeset -U path
 typeset -U manpath
-eval "$(/opt/homebrew/bin/brew shellenv)"
+which /opt/homebrew/bin/brew &> /dev/null && eval "$(/opt/homebrew/bin/brew shellenv)"
 fpath=("$HOME/.dotfiles/zfunctions" $fpath)
 path=("$HOME/.dotfiles/bin" $path)
 path=("$HOME/.deno/bin" $path)
@@ -34,7 +34,7 @@ path=("$HOME/.deno/bin" $path)
 # ============
 
 # Completions from homebrew
-fpath=("$(brew --prefix)/share/zsh/site-functions" $fpath)
+which brew &> /dev/null && fpath=("$(brew --prefix)/share/zsh/site-functions" $fpath)
 fpath=("$HOME/.dotfiles/vendor/zsh-completions/src" $fpath)
 
 autoload -Uz compinit && compinit
